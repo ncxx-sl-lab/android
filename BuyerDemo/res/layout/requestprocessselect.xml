@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="3dip"
+  >
+<!-- 
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:padding="10dip"
+    >
+-->
+    <TextView
+      android:id="@+id/title_dashboard"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/to_order_req"
+      android:gravity="center"
+      android:textSize="20sp"
+      />
+<!--
+  </LinearLayout>
+ -->
+  <!-- 上段メニュー -->
+<!-- 
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+ -->
+    <!-- line -->
+    <ImageView
+      android:src="@drawable/line"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    
+    <!-- 仕入先検索 -->  
+    <include layout="@layout/requestprocessselect_menu_supplier_search"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+      
+    <!-- line -->
+    <ImageView
+      android:src="@drawable/line"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    
+    <!-- 品目一覧 -->  
+    <include layout="@layout/requestprocessselect_menu_material_list"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+
+    <!-- line -->
+    <ImageView
+      android:src="@drawable/line"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+<!-- 
+  </LinearLayout>
+ -->
+  <!-- 下段メニュー -->
+ 
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="0dip"
+    android:gravity="center"
+    android:background="@drawable/frame_border"
+    android:layout_gravity="center">
+
+	<!-- バーコード読取 -->
+    <include layout="@layout/requestprocessselect_menu_barcode_read"
+      android:layout_width="0dip"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_margin="5dip"
+      />
+<!-- 
+    <include layout="@layout/requestprocessselect_menu_backmenu"
+      android:layout_width="0dip"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_margin="5dip"
+      />
+ -->
+  </LinearLayout>  
+    
+
+</LinearLayout>

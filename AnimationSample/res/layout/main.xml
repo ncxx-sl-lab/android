@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<Button 
+    android:text="水平移動" 
+    android:id="@+id/yoko" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="垂直移動" 
+    android:id="@+id/tate" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="回転運動" 
+    android:id="@+id/mawaru" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="透過" 
+    android:id="@+id/kieru" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="拡大" 
+    android:id="@+id/dekkakunaru" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="組み合わせ" 
+    android:id="@+id/kumiawase" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="画面遷移1" 
+    android:id="@+id/go" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="画面遷移2" 
+    android:id="@+id/go2" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="画面遷移3" 
+    android:id="@+id/go3" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+<Button 
+    android:text="画面遷移4" 
+    android:id="@+id/go4" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    />
+</LinearLayout>

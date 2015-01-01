@@ -1,0 +1,122 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    >
+    
+        			<ImageView
+		  	android:src="@drawable/background_line"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+			/>
+			
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_height="wrap_content" 
+    	android:layout_width="match_parent" 
+    	android:id="@+id/tableLayout1" 
+    	android:stretchColumns="1"
+    	
+    	>
+
+        <TableRow 
+        	android:id="@+id/tableRow1" 
+        	android:layout_width="match_parent" 
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical" 
+        	android:padding="1dp"
+        	android:background="#c0c0c0" 
+        	><!-- android:background="#6699ff" --><!-- android:background="@drawable/common_header_background" -->
+        	
+			<ImageView 
+				android:src="@android:drawable/ic_menu_compass" 
+				android:id="@+id/activitySymbol" 
+				android:layout_width="64dp" 
+				android:layout_height="64dp" 
+			    android:gravity="center_vertical"
+				android:padding="1dp"
+				/>
+			<!-- <TextView  
+				android:id="@+id/activityTitle"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="center_vertical"
+			    android:text=" "
+			    /> -->
+			<ImageView 
+				android:src="@android:drawable/stat_sys_warning" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/uploadStatusSymbol" 
+				android:layout_width="wrap_content"
+				android:gravity="center_vertical"
+				android:padding="1dp"
+				/>
+			<Button
+		 		android:id="@+id/imageButton1"   
+			  	android:layout_width="fill_parent"   
+			  	android:layout_height="wrap_content" 
+		  		android:drawableTop="@android:drawable/ic_menu_manage"
+		  		android:layout_weight="1"   
+		  		android:gravity="center"
+				android:text="設定"
+				android:textSize="8sp"
+				android:onClick="onClick_headerMenuSetting"
+		  		/>				
+			<!-- <ImageButton 
+				android:id="@+id/imageButton1" 
+				android:src="@android:drawable/ic_menu_manage"  
+				android:layout_width="64dp" 
+				android:layout_height="64dp"
+				android:gravity="center_vertical"
+				android:onClick="onClick_headerMenuSetting"
+				/> -->
+			<Button
+		 		android:id="@+id/imageButton2"   
+			  	android:layout_width="fill_parent"   
+			  	android:layout_height="wrap_content" 
+		  		android:drawableTop="@android:drawable/ic_menu_agenda"
+		  		android:layout_weight="1"   
+		  		android:gravity="center"
+				android:text="勤務一覧"
+				android:textSize="8sp"
+				android:onClick="onClick_headerMenuKinmuInfoList"
+		  		/>
+			<!-- <ImageButton 
+				android:id="@+id/imageButton2" 
+				android:src="@android:drawable/ic_menu_agenda"  
+				android:layout_width="64dp" 
+				android:layout_height="64dp"
+				android:gravity="center_vertical"
+				android:onClick="onClick_headerMenuKinmuInfoList"
+				/> -->
+			<Button
+		 		android:id="@+id/imageButton3"   
+			  	android:layout_width="fill_parent"   
+			  	android:layout_height="wrap_content" 
+		  		android:drawableTop="@android:drawable/ic_menu_compass"
+		  		android:layout_weight="1"   
+		  		android:gravity="center"
+				android:text="ホーム"
+				android:textSize="8sp"
+				android:onClick="onClick_headerMenuTopPage"
+		  		/>				
+			<!-- <ImageButton 
+				android:id="@+id/imageButton3" 
+				android:src="@android:drawable/ic_menu_compass"  
+				android:layout_width="64dp" 
+				android:layout_height="64dp"
+				android:gravity="center_vertical"
+				android:onClick="onClick_headerMenuTopPage"
+				/> -->
+
+        </TableRow>
+        
+    </TableLayout>
+	
+	    			<ImageView
+		  	android:src="@drawable/background_line"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+			/>
+</LinearLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+	<!-- 共通ヘッダ -->
+	<include
+		layout="@layout/commonheader"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		/>
+
+	<LinearLayout android:id="@+id/area1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_weight="0"
+		>
+<!--
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:id="@+id/tableLayout1"
+		    android:layout_alignParentBottom="true"
+		    android:stretchColumns="0"
+		    >
+		    <TableRow
+		    	android:id="@+id/tableRow1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical"
+		        > -->
+				<TextView
+					android:id="@+id/txtTopMenuSysDate"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="2011年11月9日"
+				    android:layout_gravity="right"
+		            android:gravity="right"
+				    />
+				<TextView
+					android:id="@+id/notUploadInfo"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="入力情報がアップロードできていません"
+				    android:textColor="@color/basic_red"/>
+
+<!-- 			</TableRow>
+		</TableLayout>
+ -->
+	</LinearLayout>
+
+
+	<LinearLayout android:id="@+id/area1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight="0"
+		>
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:id="@+id/tableLayout1"
+		    android:layout_alignParentBottom="true"
+		    android:stretchColumns="0"
+		    >
+		    <TableRow
+		    	android:id="@+id/tableRow1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical"
+		        android:background="@drawable/background_header"
+		        >
+				<TextView
+					android:id="@+id/notUploadInfo"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:gravity="left"
+				    android:text="お知らせ"
+				    android:textStyle="bold"
+				    />
+			</TableRow>
+		    <TableRow
+		    	android:id="@+id/tableRow2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical"
+		        >
+				<TextView
+					android:id="@+id/notUploadInfo"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:gravity="left"
+				    android:text="2011年11月8日（火）の勤怠情報が入力されていません。\n
+36協定残業に注意してください。\n"
+				    />
+			</TableRow>
+		</TableLayout>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/notUploadInfo"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="left"
+	    android:text="2011年11月プロジェクト状況"
+	    android:background="@drawable/background_header"
+	    android:textStyle="bold"
+	    />
+
+
+	<!-- ﾌﾟﾛｼﾞｪｸﾄ情報サマリ -->
+	<LinearLayout android:id="@+id/area1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight="0"
+		>
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content"
+		    android:layout_width="0dip"
+		    android:layout_weight="4"
+		    android:id="@+id/tableLayout1"
+		    android:layout_alignParentBottom="true"
+		    >
+		    <TableRow
+		    	android:id="@+id/tableRow1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical"
+		        android:background="@drawable/background_header"
+				>
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="PJ番号/作業ｺｰﾄﾞ"
+				    />
+			</TableRow>
+		</TableLayout>
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content"
+		    android:layout_width="0dip"
+		    android:layout_weight="3"
+		    android:id="@+id/tableLayout1"
+		    android:layout_alignParentBottom="true"
+		    >
+		    <TableRow
+		    	android:id="@+id/tableRow1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical"
+    			android:background="@drawable/background_header"
+				>
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="定時"
+				    />
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="残業"
+				    />
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="深夜"
+				    />
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/area1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight="0"
+		>
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content"
+		    android:layout_width="0dip"
+		    android:layout_weight="4"
+		    android:id="@+id/tableLayout1"
+		    android:layout_alignParentBottom="true"
+		    >
+		    <TableRow
+		    	android:id="@+id/tableRow1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical"
+		        android:background="@drawable/textborder"
+				>
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="合計"
+				    />
+			</TableRow>
+		</TableLayout>
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content"
+		    android:layout_width="0dip"
+		    android:layout_weight="3"
+		    android:id="@+id/tableLayout1"
+		    android:layout_alignParentBottom="true"
+		    >
+		    <TableRow
+		    	android:id="@+id/tableRow1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical"
+		        android:background="@drawable/textborder"
+
+
+		        >
+
+				<TextView
+				    android:id="@+id/tv_topmenu_pj_info_total_hours_worked_scheduled_time"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="right"
+				    android:text="999.99"
+				    />
+				<TextView
+				    android:id="@+id/tv_topmenu_pj_info_total_hours_worked_overtime_work"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="right"
+				    android:text="999.99"
+				    />
+				<TextView
+				    android:id="@+id/tv_topmenu_pj_info_total_hours_worked_midnight"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="right"
+				    android:text="999.99"
+				    />
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+
+
+
+
+	<!-- ﾌﾟﾛｼﾞｪｸﾄ情報リスト -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		>
+		<LinearLayout
+			android:id="@+id/dummy_space"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="top"
+			>
+    			<ListView
+					android:id="@+id/lstTopMenuProjectInfo"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					/>
+		</LinearLayout>
+	</LinearLayout>
+
+
+
+	<LinearLayout
+		android:id="@+id/area2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/basic_silver"
+		android:orientation="vertical"
+		>
+		<ImageView android:src="@drawable/background_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:id="@+id/tableLayout1"
+		    android:layout_alignParentBottom="true"
+		    >
+		    <TableRow
+		    	android:id="@+id/tableRow1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical"
+		        >
+				<Button
+			 		android:id="@+id/btnKinmuInfoDetail"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:drawableTop="@android:drawable/ic_menu_info_details"
+			  		android:layout_weight="1"
+					android:gravity="center"
+					android:text="基本情報"
+					android:onClick="onClick_KinmuInfoDetail"
+			  		/>
+				<Button
+			 		android:id="@+id/btnKinmuInfoList"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:drawableTop="@android:drawable/ic_menu_agenda"
+			  		android:layout_weight="1"
+			  		android:text="勤務一覧"
+			  		android:onClick="onClick_KinmuInfoList"
+			  		/>
+				<Button
+			 		android:id="@+id/btnKinmuInfoEdit"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:drawableTop="@android:drawable/ic_menu_edit"
+			  		android:layout_weight="1"
+			  		android:text="勤務入力"
+			  		android:onClick="onClick_KinmuInfoEdit"
+			  		/>
+		 	</TableRow>
+		</TableLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

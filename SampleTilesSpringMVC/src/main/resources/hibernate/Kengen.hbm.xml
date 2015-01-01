@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="jp.co.ctc_g.business.domain.Kengen" table="KENGEN_MST" mutable="false">
+		<id name="KengenCd" column="KENGEN_CODE" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="KengenName" column="KENGEN_NAME" type="java.lang.String" />
+	</class>
+</hibernate-mapping>
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="jp.sji.kansai.android.demo.buyer" android:versionCode="1"
+	android:versionName="1.0">
+
+	<!-- C2DMサーバーからのメッセージと登録結果の受信を許可する -->
+	<permission android:protectionLevel="signature" android:name="jp.sji.kansai.android.demo.buyer.permission.C2D_MESSAGE" />
+	<uses-permission android:name="jp.sji.kansai.android.demo.buyer.permission.C2D_MESSAGE" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+	<!-- インターネットを利用可能にする -->
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<!-- App must have this permission to use the library -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@style/CustomTheme.Light">
+
+		<activity android:name="LoginActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="MainMenuActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<!-- <category android:name="android.intent.category.LAUNCHER" />  -->
+			</intent-filter>
+		</activity>
+		<activity android:name="MaterialListActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="RequestProcessSelectActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="MaterialDetailActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="RequestInputActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="RequestConfirmActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="MasterSyncActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="StockListActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="SupplierListActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="SupplierDetailActivity">
+			<intent-filter></intent-filter>
+		</activity>
+		<activity android:name="OrderListActivity">
+			<intent-filter></intent-filter>
+		</activity>
+		<activity android:name="OrderDetailActivity">
+			<intent-filter></intent-filter>
+		</activity>
+		<activity android:name="SupplierMapActivity">
+			<intent-filter></intent-filter>
+		</activity>
+
+	<!--  Push Config Start-->
+		<activity android:name=".PushSetUpSelectActivity"
+				  android:label="@string/app_name">
+		</activity>
+		<activity android:name=".PushSetUpActivity"
+				  android:label="@string/app_name">
+		</activity>
+		<activity android:name=".PushReferActivity"
+				  android:label="@string/app_name">
+		</activity>
+
+		<service android:name=".service.C2DMReceiverService" />
+
+		<!-- C2DM サーバのみがアプリにメッセージを送信できる。許可がセットされないと、他のどのアプリでもこれを生成できてしまう -->
+		<receiver android:name=".receiver.C2DMReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+			<!-- 実際のメッセージの受信 -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<category android:name="jp.sji.kansai.android.demo.buyer" />
+			</intent-filter>
+			<!-- 登録 ID の受信 -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="jp.sji.kansai.android.demo.buyer" />
+			</intent-filter>
+		</receiver>
+	<!--  Push Config End-->
+
+		<uses-library android:name="com.google.android.maps" />
+
+	</application>
+
+</manifest>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  
+  >
+  
+<!-- 
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+ -->
+    <TextView
+      android:id="@+id/title_dashboard"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/app_name"
+      android:gravity="center"
+      android:textSize="20sp"
+      />
+<!-- 
+  </LinearLayout>
+ -->
+
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:fadingEdgeLength="50dp"
+	    android:layout_weight="1"
+	>
+
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+    <include layout="@layout/feature31_item"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+    <include layout="@layout/feature32_item"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+    <include layout="@layout/feature33_item"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+
+
+
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+    <include layout="@layout/feature34_item"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+    <include layout="@layout/feature35_item"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+    <include layout="@layout/feature36_item"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+ 	
+  </LinearLayout>
+
+  </ScrollView>  
+
+</LinearLayout>

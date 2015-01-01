@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+>
+
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:fadingEdgeLength="50dp"
+	    android:layout_weight="1"
+	>
+
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	    >
+
+			<ImageView 
+			    android:id="@+id/materialDetail_MaterialImage" 
+			    android:src="@drawable/clsu13tb1b" 
+			    android:layout_height="wrap_content" 
+			    android:layout_width="wrap_content"
+			    android:layout_gravity="center"
+			    android:paddingTop="3dp"
+			    android:paddingBottom="3dp"
+			    />
+		
+			<TextView
+			    android:text="品目コード"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="CLSU13TV1B"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+		
+			<TextView
+			    android:text="品目名"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="CENTURY(センチュリー) CL-SU13TV1B MEZZO(メッツォ) ハイビジョン液晶テレビ 13V型"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+		    <ImageView
+			  	android:src="@drawable/line"
+			  	android:layout_width="fill_parent"
+			  	android:layout_height="wrap_content"
+				/>
+			<TextView
+			    android:text="品目グループ"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="液晶テレビ"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+		
+			<TextView
+			    android:text="発注単位"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="10"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+		
+			<TextView
+			    android:text="総重量"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="3kg"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+		
+			<TextView
+			    android:text="製造者番号"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="xxxx-xxxxx-xxxxxxxx"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+		
+			<TextView
+			    android:text="標準原価"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="\\20,094-"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+		    <ImageView
+			  	android:src="@drawable/line"
+			  	android:layout_width="fill_parent"
+			  	android:layout_height="wrap_content"
+			    android:paddingTop="3dp"
+			    android:paddingBottom="3dp"			  	
+				/>
+			<TextView
+			   	android:text="詳細情報"
+			   	android:layout_width="fill_parent"
+			   	android:layout_height="wrap_content"
+			   	/>
+		   
+			<TextView
+				android:text="この商品は夏向け商戦に必要であり、大量購入が必要。"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+	
+		</LinearLayout>
+	</ScrollView>	  
+      
+    <Button 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	android:text="通知入力" 
+    	android:id="@+id/SelectButton"
+    	/>
+
+</LinearLayout>    
+
+    
+    
+    

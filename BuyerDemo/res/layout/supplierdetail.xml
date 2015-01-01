@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="match_parent" android:layout_width="fill_parent" android:orientation="vertical" >
+      <android.gesture.GestureOverlayView android:id="@+id/supplierDetail_gestureOverlayView" android:layout_height="fill_parent" android:layout_width="fill_parent" >
+    	<LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content">
+        	<TableLayout android:layout_height="wrap_content" android:shrinkColumns="1" android:stretchColumns="1" android:id="@+id/tableLayout1" android:layout_width="fill_parent">
+        		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_margin="1mm" android:layout_width="wrap_content">
+        			<TextView android:id="@+id/supplierDetail_nameLabel" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/suppliername" ></TextView>
+        			<TextView android:id="@+id/supplierDetail_nameText" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="株式会社 SJI" ></TextView>
+        		</TableRow>
+        		<TableRow android:layout_height="wrap_content" android:id="@+id/supplierDetail_tableRow2" android:layout_margin="1mm" android:layout_width="wrap_content">
+        			<TextView android:id="@+id/supplierDetail_addressLabel" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/suppliyeaddress" ></TextView>
+        			<TextView android:id="@+id/supplierDetail_addressText" android:layout_height="wrap_content" android:layout_width="wrap_content" android:autoLink="map" android:clickable="true" android:text="〒550-0004 大阪市西区靭本町一丁目7番9号靭イーストビル7階" ></TextView>
+        		</TableRow>
+        		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow3" android:layout_margin="1mm" android:layout_width="wrap_content">
+        			<TextView android:id="@+id/supplierDetail_telLabel" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/tellnumber" ></TextView>
+        			<TextView android:id="@+id/supplierDetail_telValue" android:layout_height="wrap_content" android:layout_width="wrap_content" android:autoLink="phone" android:clickable="true" android:text="9999999999" ></TextView>
+        		</TableRow>
+        		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow4" android:layout_margin="1mm" android:layout_width="wrap_content">
+        			<TextView android:id="@+id/supplierDetail_mailLabel" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginRight="1mm" android:text="@string/email" ></TextView>
+        			<TextView android:id="@+id/supplierDetail_mailValue" android:layout_height="wrap_content" android:layout_width="wrap_content" android:autoLink="email" android:clickable="true" android:text="xxxxxxxxxxxx@xxx.xx.xx" ></TextView>
+        		</TableRow>
+        	</TableLayout>
+        	<Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="bottom" android:text="取扱品目" android:id="@+id/supplierDetail_MaterialListButton"></Button>
+        	<Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="bottom" android:text="@string/request_create" android:id="@+id/supplierDetail_RequestCreateButton"></Button>
+    	</LinearLayout>
+   	</android.gesture.GestureOverlayView>
+</LinearLayout>

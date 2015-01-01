@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="jp.co.ctc_g.business.domain.Syain"
+		table="SYAIN_MST" select-before-update="true">
+		<id column="SYAIN_NO" name="SyainNo" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property column="NAME" name="SyainName" type="java.lang.String" />
+		<property column="PASSWORD" name="Password" type="java.lang.String" />
+		<property column="DEL_FLG" name="DelFlg" type="java.lang.String" />
+		<property column="OTL_FLG" name="OtlFlg" type="java.lang.String" />
+		<many-to-one fetch="join" column="BUSHO_CODE" name="Busho" cascade="none" />
+		<many-to-one fetch="join" column="GROUP_CODE" name="Group" cascade="none" />
+		<many-to-one fetch="join" column="KENGEN_CODE" name="Kengen" cascade="none" />
+	</class>
+</hibernate-mapping>

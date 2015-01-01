@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item 
+		android:title="システム設定" 
+		android:icon="@android:drawable/ic_menu_manage"
+		android:orderInCategory="10" 
+		android:id="@+id/setting_menuItem_SystemSetting"
+		/>
+	<item 
+		android:title="マスタ設定" 
+		android:icon="@android:drawable/ic_menu_preferences"
+		android:orderInCategory="11" 
+		android:id="@+id/setting_menuItem_MasterSetting"
+		/>
+	<item 
+		android:title="個人設定" 
+		android:icon="@android:drawable/ic_menu_mylocation"
+		android:orderInCategory="12" 
+		android:id="@+id/setting_menuItem_PrivateSetting"
+		/>
+				
+</menu>

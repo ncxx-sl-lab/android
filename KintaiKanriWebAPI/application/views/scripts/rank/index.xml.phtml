@@ -1,0 +1,13 @@
+<?php
+require_once("XML/Serializer.php"); 
+$options = array(
+'encoding' => 'UTF-8',
+'addDecl'  => true,
+'rootName' => 'RANK_LIST',
+'defaultTagName' => 'RANK'
+);
+
+$obj = new XML_Serializer($options);
+$obj->serialize($this->RANK_LIST);
+$xml = $obj->getSerializedData();
+echo $xml;

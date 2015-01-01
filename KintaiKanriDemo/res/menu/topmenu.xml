@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- 上段 -->
+	<item 
+		android:title="基本情報" 
+		android:icon="@android:drawable/ic_menu_info_details"
+		android:orderInCategory="10" 
+		android:id="@+id/topmenu_menuItem_KinmuInfoDetail"
+		/>
+	<item 
+		android:title="勤務一覧" 
+		android:icon="@android:drawable/ic_menu_agenda"
+		android:orderInCategory="11" 
+		android:id="@+id/topmenu_menuItem_KinmuInfoList"
+		/>
+	<item 
+		android:title="勤務入力" 
+		android:icon="@android:drawable/ic_menu_edit"
+		android:orderInCategory="12" 
+		android:id="@+id/topmenu_menuItem_KinmuInfoEdit"
+		/>
+		
+	<!-- 下段 -->
+	<item 
+		android:title="アップロード" 
+		android:icon="@android:drawable/ic_menu_upload"
+		android:orderInCategory="20" 
+		android:id="@+id/topmenu_menuItem_KinmuInfoUpload"
+		/>
+	<item 
+		android:title="設定" 
+		android:icon="@android:drawable/ic_menu_manage"
+		android:orderInCategory="21" 
+		android:id="@+id/topmenu_menuItem_SettingMenu"
+		/>
+	<item 
+		android:title="36協定とは" 
+		android:icon="@android:drawable/ic_menu_help"
+		android:orderInCategory="22" 
+		android:id="@+id/topmenu_menuItem_InfoView36Kyoutei"
+		/>
+				
+</menu>

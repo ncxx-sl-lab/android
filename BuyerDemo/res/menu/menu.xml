@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="メニュー" android:icon="@*android:drawable/ic_menu_home" android:orderInCategory="98" android:id="@+id/menuItem_menu"></item>
+    <item android:title="ログアウト" android:icon="@android:drawable/ic_menu_close_clear_cancel" android:orderInCategory="99" android:id="@+id/menuItem_logOut"></item>
+</menu>

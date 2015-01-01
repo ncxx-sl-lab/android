@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, KintaiKanri Demo!</string>
+    <string name="app_name">勤怠管理デモ</string>
+    <string name="errorMsg_start_time_empty">開始は必ず入力して下さい。</string>
+    <string name="errorMsg_end_time_empty">終了は必ず入力して下さい。</string>
+    <string name="errorMsg_shift_empty">シフトは必ず入力して下さい。</string>
+    <string name="kinmuInfoView_label_kinmu_time">■勤務時間</string>
+    <string name="kinmuInfoView_label_shift_no">■シフト番号</string>
+    <string name="kinmuInfoView_label_special_affairs">■特記事項</string>
+    <string name="kinmuInfoView_label_rest_no">■休暇番号</string>
+    <string name="kinmuInfoView_label_memo">■メモ</string>
+    <string name="kinmuInfoView_label_project_no">プロジェクト番号</string>
+    <string name="kinmuInfoView_label_work_cd">作業コード</string>
+    <string name="kinmuInfoView_label_scheduled_time">定時</string>
+    <string name="kinmuInfoView_label_overtime_work">残業</string>
+    <string name="kinmuInfoView_label_midnight">残業</string>
+    <string name="kinmuInfoEdit_label_start_time">■開始時間</string>
+    <string name="kinmuInfoEdit_label_end_time">■終了時間</string>
+    <string name="kinmuInfoEdit_label_shift">■シフト</string>
+    <string name="kinmuInfoEdit_label_special_affairs">■特記事項</string>
+    <string name="kinmuInfoEdit_label_rest">■休暇内容</string>
+    <string name="kinmuInfoEdit_label_memo">■メモ</string>
+    <string name="kinmuInfoEdit_label_project">■プロジェクト</string>
+    <string name="kinmuInfoEdit_button_name_project">プロジェクト情報編集</string>
+    <string name="settingMenu_button_name_systemSetting">システム設定</string>
+    <string name="settingMenu_button_name_masterSetting">マスタ設定</string>
+    <string name="settingMenu_button_name_privateSetting">個人設定</string>
+
+<!--  プロジェクト時間定数（定時）  -->
+    <string-array name="basic_time">
+    	<item>0.00</item>
+    	<item>0.25</item>
+    	<item>0.50</item>
+    	<item>0.75</item>
+    	<item>1.00</item>
+    	<item>1.25</item>
+    	<item>1.50</item>
+    	<item>1.75</item>
+    	<item>2.00</item>
+    	<item>2.25</item>
+    	<item>2.50</item>
+    	<item>2.75</item>
+    	<item>3.00</item>
+    	<item>3.25</item>
+    	<item>3.50</item>
+    	<item>3.75</item>
+    	<item>4.00</item>
+    	<item>4.25</item>
+    	<item>4.50</item>
+    	<item>4.75</item>
+    	<item>5.00</item>
+    	<item>5.25</item>
+    	<item>5.50</item>
+    	<item>5.75</item>
+    	<item>6.00</item>
+    	<item>6.25</item>
+    	<item>6.50</item>
+    	<item>6.75</item>
+    	<item>7.00</item>
+    	<item>7.25</item>
+    	<item>7.50</item>
+    	<item>7.75</item>
+    </string-array>
+<!--  プロジェクト時間定数（残業）  -->
+    <string-array name="zangyou_time">
+    	<item>0.00</item>
+    	<item>0.25</item>
+    	<item>0.50</item>
+    	<item>0.75</item>
+    	<item>1.00</item>
+    	<item>1.25</item>
+    	<item>1.50</item>
+    	<item>1.75</item>
+    	<item>2.00</item>
+    	<item>2.25</item>
+    	<item>2.50</item>
+    	<item>2.75</item>
+    	<item>3.00</item>
+    	<item>3.25</item>
+    	<item>3.50</item>
+    	<item>3.75</item>
+    	<item>4.00</item>
+    	<item>4.25</item>
+    	<item>4.50</item>
+    	<item>4.75</item>
+    	<item>5.00</item>
+    	<item>5.25</item>
+    	<item>5.50</item>
+    	<item>5.75</item>
+    	<item>6.00</item>
+    </string-array>
+<!--  プロジェクト時間定数（深夜）  -->
+    <string-array name="shinya_time">
+    	<item>0.00</item>
+    	<item>0.25</item>
+    	<item>0.50</item>
+    	<item>0.75</item>
+    	<item>1.00</item>
+    	<item>1.25</item>
+    	<item>1.50</item>
+    	<item>1.75</item>
+    	<item>2.00</item>
+    	<item>2.25</item>
+    	<item>2.50</item>
+    	<item>2.75</item>
+    	<item>3.00</item>
+    	<item>3.25</item>
+    	<item>3.50</item>
+    	<item>3.75</item>
+    	<item>4.00</item>
+    	<item>4.25</item>
+    	<item>4.50</item>
+    	<item>4.75</item>
+    	<item>5.00</item>
+    	<item>5.25</item>
+    	<item>5.50</item>
+    	<item>5.75</item>
+    	<item>6.00</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,13 @@
+<?php
+require_once("XML/Serializer.php"); 
+$options = array(
+'encoding' => 'UTF-8',
+'addDecl'  => true,
+'rootName' => 'SAGYO_LIST',
+'defaultTagName' => 'SAGYO'
+);
+
+$obj = new XML_Serializer($options);
+$obj->serialize($this->SAGYO_LIST);
+$xml = $obj->getSerializedData();
+echo $xml;

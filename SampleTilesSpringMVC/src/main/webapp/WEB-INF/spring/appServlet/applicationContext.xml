@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		">
+
+	<!-- 設定インポート -->
+	<!-- =============================================================================================== -->
+	<!-- データベース関連 -->
+	<import resource="applicationContext-database.xml" />
+	<!-- Tiles -->
+	<import resource="applicationContext-tiles.xml" />
+	<!-- Hibernate -->
+	<import resource="applicationContext.hibernate.xml" />
+	<!-- =============================================================================================== -->
+
+
+	<!-- AOP設定 -->
+	<aop:aspectj-autoproxy proxy-target-class="false" />
+
+
+	<!-- トランザクション設定 -->
+	<!-- =============================================================================================== -->
+	<aop:config>
+		<aop:pointcut id="servicePointcut"
+			expression="execution(* jp.co.ctc_g.service.*.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="servicePointcut"/>
+	</aop:config>
+
+	<!-- トランザクションのアノテーションを有効にする -->
+	<tx:annotation-driven />
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="update*" propagation="REQUIRED"/>
+		</tx:attributes>
+	</tx:advice>
+	<!-- =============================================================================================== -->
+
+
+	<!-- Been登録設定 -->
+	<context:component-scan base-package="jp.co.ctc_g" />
+
+	<!-- 後で調べる -->
+	<mvc:annotation-driven />
+
+	<!-- ルートにアクセスされたらどこに飛ばすか -->
+	<mvc:view-controller path="/" view-name="dummy" />
+
+	<!-- Configures Handler Interceptors -->
+	<mvc:interceptors>
+		<!-- ロケールの設定 -->
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
+	</mvc:interceptors>
+
+	<!-- リソースの読み込み JavaScriptとかCSS-->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<!-- 後で調べる -->
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.CookieLocaleResolver" />
+
+	<!-- メッセージリソース読み込み -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>classpath:errors</value>
+				<value>classpath:messages</value>
+				<value>classpath:ValidateMessages</value>
+			</list>
+		</property>
+		<property name="cacheSeconds" value="0" />
+	</bean>
+
+	<!-- Exceptionハンドラ登録 -->
+	<!--
+	<bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<map>
+				<entry key="jp.co.ctc_g.business.common.exception.BusinessException" value="dummy"></entry>
+			</map>
+		</property>
+	</bean>
+	 -->
+
+</beans>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- Appender -->
+	<!-- ======================================================================================== -->
+	<appender name="ctc_nippo" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/eclipse_jfw/eclipse/log/ctc_nippo.log" />
+		<param name="MaxFileSize" value="500kB" />
+		<param name="MaxBackupIndex" value="2" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] %p %m%n" />
+		</layout>
+	</appender>
+
+	<!-- 標準出力 -->
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] %p %m%n" />
+		</layout>
+	</appender>
+	<!-- ======================================================================================== -->
+
+	<!-- Logger -->
+	<!-- ======================================================================================== -->
+	<logger name="jp.sji_inc">
+		<level value="debug" />
+		<appender-ref ref="stdout" />
+		<!-- <appender-ref ref="ctc_nippo" /> -->
+	</logger>
+
+	<!-- Spring Framework -->
+	<logger name="org.springframework">
+		<level value="info" />
+		<appender-ref ref="stdout" />
+	</logger>
+
+	<logger name="org.hibernate">
+		<level value="info" />
+		<appender-ref ref="stdout" />
+	</logger>
+	<!-- ======================================================================================== -->
+
+	<!-- Root -->
+	<!-- ======================================================================================== -->
+	<root>
+		<level value="info" />
+	</root>
+	<!-- ======================================================================================== -->
+
+</log4j:configuration>

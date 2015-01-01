@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+>
+
+	<TextView
+    	android:text="承認履歴一覧" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:textSize="19dip"
+    	android:id="@+id/listTitle" 
+	/>
+	
+	<ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:fadingEdgeLength="100dp"
+    	android:layout_weight="1"
+	>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ListView 
+	android:id="@+id/listView" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    />
+</LinearLayout>
+
+    	
+        
+	</ScrollView>
+
+
+    
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:orientation="horizontal">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="一覧に戻る" android:id="@+id/BackButton"></Button>
+    </LinearLayout>
+
+</LinearLayout>

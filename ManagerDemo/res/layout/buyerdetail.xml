@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+>
+
+     <TextView 
+         android:layout_width="wrap_content"  
+         android:layout_height="wrap_content"
+         android:text="バイヤー１"
+         style="@style/ListTitleStyle"
+         android:paddingTop="6dp"
+         android:paddingBottom="6dp" 
+         />  
+  
+
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:fadingEdgeLength="20dp"
+	    android:layout_weight="1"
+	>
+
+    
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	    >
+
+			<!-- 見出し -->
+			<TextView
+			    android:text="操作"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/FindingTitleStyle"
+			   	/>	
+
+
+		    <include layout="@layout/buyerdetail_menu01"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      />
+		    <include layout="@layout/buyerdetail_menu02"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      />
+		    <include layout="@layout/buyerdetail_menu03"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      />
+		    <include layout="@layout/buyerdetail_menu04"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      />
+		    <include layout="@layout/buyerdetail_menu05"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      />
+		            
+			<!-- 見出し -->
+			<TextView
+			    android:text="情報"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/FindingTitleStyle"
+			   	/>	
+		
+			<TextView
+			    android:text="名前"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="バイヤー１"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+
+			<TextView
+			    android:text="ふりがな"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="ばいやー１"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+
+
+			<TextView
+			    android:text="TEL"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="090-1234-5678"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+
+			<TextView
+			    android:text="MAIL"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    style="@style/DetailTitleStyle"
+			   	/>	    
+			<TextView
+			    android:text="test@android.com"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			   	/>
+
+		    <ImageView
+			  	android:src="@drawable/line"
+			  	android:layout_width="fill_parent"
+			  	android:layout_height="wrap_content"
+			    android:paddingTop="6dp"
+			    android:paddingBottom="6dp"			  	
+				/>
+			<TextView
+			   	android:text="詳細情報"
+			   	android:layout_width="fill_parent"
+			   	android:layout_height="wrap_content"
+			   	style="@style/DetailTitleStyle"
+			   	/>
+		   
+			<TextView
+				android:text="補足情報をここの欄に入れてもよいか。"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+	
+		</LinearLayout>
+	</ScrollView>	  
+
+
+</LinearLayout>
+
+
+
+

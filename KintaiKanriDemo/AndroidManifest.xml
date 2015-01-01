@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jp.sji.kansai.android.demo"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8"/>
+    <support-screens 
+    	android:largeScreens="true"
+    	android:anyDensity="true"
+    />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/CustomTheme.Light">
+
+		<!-- ダミー画面 -->
+        <activity android:name=".activity.dummyKinmuInfoEditActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+        <activity android:name=".activity.dummyKinmuInfoViewActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+
+    
+        <!-- トップ画面 -->
+        <activity android:name=".activity.TopMenuActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 勤務情報一覧画面 -->
+        <activity android:name=".activity.KinmuInfoListActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                  
+        </activity>
+        
+		<!-- 勤務情報表示画面 -->
+        <activity android:name=".activity.KinmuInfoViewActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+
+		<!-- 勤務情報編集画面 -->
+        <activity android:name=".activity.KinmuInfoEditActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+
+		<!-- プロジェクト情報表示画面 -->
+        <activity android:name=".activity.ProjectInfoListActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>  
+
+		<!-- プロジェクト情報編集画面 -->
+        <activity android:name=".activity.ProjectInfoEditActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>  
+
+		<!-- 設定画面（メニュー） -->
+        <activity android:name=".activity.SettingMenuActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>  
+
+		<!-- 設定画面（システム設定） -->
+        <activity android:name=".activity.SettingSystemActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+
+		<!-- 設定画面（マスタ設定） -->
+        <activity android:name=".activity.SettingMasterActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+
+		<!-- 設定画面（個人設定） -->
+        <activity android:name=".activity.SettingPrivateActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+
+		<!-- 36協定説明画面 -->
+        <activity android:name=".activity.InfoView36KyouteiActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+
+		<!-- 勤務基本情報画面 -->
+        <activity android:name=".activity.KinmuInfoDetailActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+
+		<!-- 設定画面タブ -->
+        <activity android:name=".activity.SettingMenuTabActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>                   
+        </activity>
+        
+    </application>
+    
+</manifest>

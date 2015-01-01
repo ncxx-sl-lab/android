@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:baselineAligned="false" android:layout_width="fill_parent" android:orientation="vertical" android:background="@color/bg" android:layout_height="fill_parent">
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/MainMenuToOrderReq" android:text="@string/to_order_req"></Button>
+    <Button android:layout_height="wrap_content" android:id="@+id/button2" android:layout_width="fill_parent" android:text="@string/to_notice_list"></Button>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/to_order_list" android:id="@+id/MainMenuToOrderList"></Button>
+</LinearLayout>

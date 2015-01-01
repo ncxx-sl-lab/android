@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:orientation="vertical" android:layout_width="fill_parent">
+    <TextView android:text="" android:layout_width="match_parent" android:id="@+id/textView_desc" android:layout_height="70dip"></TextView>
+    <TextView android:text="社員番号(半角英数字、10文字以内)" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/textView2"></TextView>
+    <EditText android:text="" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/editText_empId"></EditText>
+    <TextView android:text="" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <Button android:text="設定" android:id="@+id/button_setup" android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
+
+
+</LinearLayout>

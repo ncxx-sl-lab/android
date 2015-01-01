@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 位置情報 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:gravity="center"
+  android:onClick="clickMapDisplayButton"
+  android:background="@drawable/button_stateful2"
+  android:focusable="true"
+  >
+  <ImageView
+    android:src="@android:drawable/ic_menu_myplaces"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+  <TextView
+    android:background="@color/feature_text_bg"
+    android:text="位置情報"
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    />
+  <ImageView
+    android:src="@drawable/ic_menu_more"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+</LinearLayout>

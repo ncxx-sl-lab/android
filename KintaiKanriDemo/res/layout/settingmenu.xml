@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<!-- 共通ヘッダ -->
+	<include 
+		layout="@layout/commonheader"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		/>
+		
+	<Button
+	    android:id="@+id/btnSystemSetting"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/settingMenu_button_name_systemSetting" />
+	
+	<Button
+	    android:id="@+id/btnMasterSetting"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/settingMenu_button_name_masterSetting" />
+	
+	<Button
+	    android:id="@+id/btnPrivateSetting"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/settingMenu_button_name_privateSetting" />
+
+
+
+</LinearLayout>

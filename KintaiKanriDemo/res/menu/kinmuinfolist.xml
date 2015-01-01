@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<!-- 上段 -->
+	<item 
+		android:title="＜＜前月" 
+		android:icon="@android:drawable/ic_media_rew"
+		android:id="@+id/kinmuinfolist_menuItem_Before"
+		/>
+	<item 
+		android:title="翌月＞＞" 
+		android:icon="@android:drawable/ic_media_ff"
+		android:id="@+id/kinmuinfolist_menuItem_Next"
+		/>
+
+	<!-- 下段 -->
+	<item 
+		android:title="当月" 
+		android:icon="@android:drawable/ic_menu_today"
+		android:id="@+id/kinmuinfolist_menuItem_Current"
+		/>
+	<item 
+		android:title="勤務入力" 
+		android:icon="@android:drawable/ic_menu_edit"
+		android:id="@+id/kinmuinfolist_menuItem_KinmuNewInput"
+		/>
+    
+</menu>

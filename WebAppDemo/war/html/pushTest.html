@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>プッシュ通知</title>
+  </head>
+
+  <body>
+  	<h1>プッシュ通知</h1>
+
+	<form action="/C2DMPush.do">
+	  <table border="1">
+      <tr>
+        <td colspan="2" style="font-weight:bold;">社員番号</td>
+        <td colspan="2" style="font-weight:bold;"><input type="text" name="empNo" value=""></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="font-weight:bold;">区分<br>(B：バイヤー M：管理者)</td>
+        <td colspan="2" style="font-weight:bold;"><input type="text" name="division" value=""></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="font-weight:bold;">メッセージ</td>
+        <td colspan="2" style="font-weight:bold;"><input type="text" name="message" value=""></td>
+      </tr>
+    </table>
+    <br>
+    <input type="submit"  value="送信">
+	</form>
+
+
+  </body>
+</html>

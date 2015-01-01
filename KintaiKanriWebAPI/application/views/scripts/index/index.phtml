@@ -1,0 +1,24 @@
+<html>
+<body>
+<script type="text/javascript">
+function postXml(){
+	var req = new XMLHttpRequest();
+	if (req) {
+		req.onreadystatechange = function(){
+			if (req.readyState == 4 && req.status == 200) {
+				alert(req.responseText);
+			}};
+		var url = "emp?format=xml";
+		//req.setRequestHeader("content-type","text/xml");
+		req.open('POST', url);
+		req.send('<?xml version="1.0" encoding="UTF-8" ?>\n'+
+		  '<EMP>\n'+
+		  '    <EMP_NO>00000</EMP_NO>\n'+
+		  '    <EMP_NAME>test</EMP_NAME>\n'+
+		  '</EMP>');
+	}
+}
+</script>
+<input type=button value=submit onclick="postXml();" />
+</body>
+</html>

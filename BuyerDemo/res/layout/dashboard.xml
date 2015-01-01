@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="3dip"
+  >
+
+<!-- 
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:padding="10dip"
+    >
+ --> 
+    <TextView
+      android:id="@+id/title_dashboard"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="BuyerDemoMenu"
+      android:gravity="center"
+      android:textSize="20sp"
+      />
+<!--        
+  </LinearLayout>
+ -->
+ 
+ 	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:fadingEdgeLength="50dp"
+	    android:layout_weight="1"
+	>
+  
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+
+	<!-- 発注依頼 -->
+    <include layout="@layout/dashboardlist_menu_orderreq"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    
+    <!-- line -->
+    <ImageView
+	  android:src="@drawable/line"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	/>
+	
+	<!-- 通知履歴 -->
+    <include layout="@layout/dashboardlist_menu_noticelist"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    
+    <!-- line -->
+    <ImageView
+      android:src="@drawable/line"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    
+    <!-- 発注履歴 -->
+    <include layout="@layout/dashboardlist_menu_orderlist"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+    
+    <!-- line -->
+    <ImageView
+      android:src="@drawable/line"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+     />
+
+  </LinearLayout>  
+
+  </ScrollView>
+ 
+</LinearLayout>

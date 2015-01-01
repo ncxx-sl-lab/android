@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" 
+	    android:layout_width="0dip"
+	    android:layout_weight="4" 
+	    android:id="@+id/tableLayout1" 
+	    android:stretchColumns="0"
+	    >
+
+	    <TableRow 
+	    	android:id="@+id/tableRow1" 
+	        
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        
+	        >
+
+
+			<TextView  
+			android:id="@+id/tv_kinmuInfoView_project_no"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+			android:gravity="left"
+		    android:text="PJ番号／作業ｺｰﾄﾞ"
+		    />
+
+		</TableRow>
+
+	</TableLayout>
+	
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" 
+	    android:layout_width="0dip"
+	    android:layout_weight="3" 
+	    android:id="@+id/tableLayout2" 
+	    >
+
+	    <TableRow 
+	    	android:id="@+id/tableRow2" 
+	         
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        
+	        >
+	        
+			<TextView  
+				android:id="@+id/tv_kinmuInfoView_scheduledTime"
+			    android:layout_width="0dip" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1" 
+			    android:gravity="right"
+			    android:text="定時"
+			    />
+			<TextView  
+				android:id="@+id/tv_kinmuInfoView_overtimeWork"
+			    android:layout_width="0dip" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1" 
+			    android:gravity="right"
+			    android:text="残業"
+			    />
+			<TextView  
+				android:id="@+id/tv_kinmuInfoView_midnight"
+			    android:layout_width="0dip" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1" 
+			    android:gravity="right" 
+			    android:text="深夜"
+			    />				    
+		</TableRow>
+   	</TableLayout>
+</LinearLayout>
+

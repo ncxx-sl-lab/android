@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	
+		    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_height="wrap_content" 
+		    	android:layout_width="fill_parent" 
+		    	android:id="@+id/tableLayout1" 
+		    	android:layout_alignParentBottom="true"
+		    	android:stretchColumns="8"
+		    	>
+		        <TableRow 
+		        	android:id="@+id/tableRow1" 
+		        	android:layout_width="fill_parent" 
+		        	android:layout_height="wrap_content"
+		        	android:layout_centerInParent="true"
+		        	android:gravity="center_vertical"
+		        	android:layout_marginTop="10dp"
+		        	android:layout_marginBottom="10dp"
+		        	>
+	<ImageView
+		android:src="@drawable/ic_menu_compose"  
+		android:layout_width="32dp"
+		android:layout_height="32dp"
+	/>
+			        <TextView
+			        	android:id="@+id/txtDate"
+			            android:text="11/ 1"
+			            android:gravity="left"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:paddingLeft="5dp"
+			            />
+
+			        <TextView
+			        	android:id="@+id/txtSpace1"
+			            android:text="  "
+			            android:gravity="left"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            />
+			            
+			        <TextView
+			        	android:id="@+id/txtWeekDay"
+			            android:text="(火)"
+			            android:gravity="left"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            />
+
+			        <TextView
+			        	android:id="@+id/txtSpace2"
+			            android:text="  "
+			            android:gravity="left"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            />
+			            
+			        <TextView
+			        	android:id="@+id/txtStartTime"
+			            android:text=" 9:00"
+			            android:gravity="center"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            />
+
+			        <TextView
+			        	android:id="@+id/txtFromTo"
+			            android:text=" ～ "
+			            android:gravity="center"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            />
+
+			        <TextView
+			        	android:id="@+id/txtFinishTime"
+			            android:text="18:00"
+			            android:gravity="center"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            />
+			            
+			        <TextView 
+			        	android:id="@+id/txtStatus" 
+			        	android:text="■status■" 
+			        	android:layout_height="wrap_content" 
+			        	android:gravity="right" 
+			        	android:layout_width="wrap_content"
+			        	android:paddingRight="5dp" 
+			        	/>
+			            
+		        </TableRow>
+		        
+		    </TableLayout>
+
+
+</LinearLayout>

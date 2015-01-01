@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<!-- form -->
+	<form-beans>
+
+		<!-- C2DM用registrationID登録API -->
+		<form-bean name="C2DMRegistForm" type="jp.sji.kansai.demo.form.api.C2DMRegistForm"/>
+
+		<!-- C2DM用registrationID解除API -->
+		<form-bean name="C2DMUnRegistForm" type="jp.sji.kansai.demo.form.api.C2DMUnRegistForm"/>
+
+		<!-- プッシュ通知API -->
+		<form-bean name="C2DMPushForm" type="jp.sji.kansai.demo.form.api.C2DMPushForm"/>
+
+	</form-beans>
+
+	<!-- exception -->
+<!--
+	<global-exceptions>
+		<exception id="Exception" type="java.lang.Exception" path="/jsp/exception/Exception.jsp" />
+	</global-exceptions>
+-->
+
+	<!-- global forwards -->
+<!--
+	<global-forwards>
+		<forward name="XXX" path="XXXX" />
+	</global-forwards>
+-->
+
+	<!-- action -->
+	<action-mappings>
+
+		<!-- C2DM registrationID登録API -->
+		<action path="/C2DMRegist"
+			name="C2DMRegistForm" scope="request" validate="false"
+			type="jp.sji.kansai.demo.action.api.C2DMRegistAction" parameter="action">
+			<forward name="xml" path="/jsp/api/C2DMRegist.jsp" />
+		</action>
+
+		<!-- C2DM registrationID解除API -->
+		<action path="/C2DMUnRegist"
+			name="C2DMUnRegistForm" scope="request" validate="false"
+			type="jp.sji.kansai.demo.action.api.C2DMUnRegistAction" parameter="action">
+			<forward name="xml" path="/jsp/api/C2DMUnRegist.jsp" />
+		</action>
+
+
+		<!-- プッシュ通知API -->
+		<action path="/C2DMPush"
+			name="C2DMPushForm" scope="request" validate="false"
+			type="jp.sji.kansai.demo.action.api.C2DMPushAction" parameter="action">
+			<forward name="xml" path="/jsp/api/C2DMPush.jsp" />
+		</action>
+
+	</action-mappings>
+
+
+	<!-- message-resources -->
+	<message-resources parameter="MessageResources"/>
+
+	<plug-in className="jp.sji.kansai.demo.plugin.AppPlugIn" />
+
+</struts-config>

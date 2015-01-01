@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item 
+		android:title="＜＜前日" 
+		android:icon="@android:drawable/ic_media_rew"
+		android:id="@+id/dummykinmuinfoview_menuItem_Before"
+		/>
+	<item 
+		android:title="勤務時間編集" 
+		android:icon="@android:drawable/ic_menu_edit"
+		android:id="@+id/dummykinmuinfoview_menuItem_KinmuNewInput"
+		/>
+	<item 
+		android:title="翌日＞＞" 
+		android:icon="@android:drawable/ic_media_ff"
+		android:id="@+id/dummykinmuinfoview_menuItem_Next"
+		/>
+				
+</menu>

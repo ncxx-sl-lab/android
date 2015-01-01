@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+    
+	<!-- 共通ヘッダ -->
+ <!-- 
+	<include 
+		layout="@layout/commonheader"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		/>
+ -->
+    <!-- Settin Header -->
+<!-- 
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_height="wrap_content"
+    	android:layout_width="match_parent"
+    	android:id="@+id/tableLayout1"
+    	android:stretchColumns="*"
+    	android:background="#aaaaaa"
+    	>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:stretchColumns="*"
+        	>
+            <Button android:text="システム" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" ></Button>
+
+            <Button android:text="マスタ　" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_weight="3"  android:layout_height="wrap_content"  android:onClick="toSettingMaster"></Button>
+            <Button android:text="個人" android:id="@+id/button3" android:layout_width="wrap_content" android:layout_weight="2"  android:layout_height="wrap_content"  android:onClick="toSettingPrivate"></Button>
+        </TableRow>
+
+    </TableLayout>
+ -->
+	<CheckBox 
+		android:id="@+id/dataTransrateCheckBox" 
+		android:layout_height="wrap_content" 
+		android:text="即時データ送信"
+		android:layout_width="match_parent"
+		/>
+	<CheckBox 
+		android:id="@+id/updateNoticeChecKBox" 
+		android:layout_height="wrap_content" 
+		android:text="データ更新通知あり"
+		android:layout_width="match_parent"
+		/>
+	<TextView 
+		android:text="サーバー設定" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent" 
+		android:id="@+id/textView1"
+		/>
+	<EditText 
+		android:text="http://xxxxxxx" 
+		android:layout_width="match_parent" 
+		android:id="@+id/editText1" 
+		android:layout_height="wrap_content" android:layout_gravity="center_horizontal"/>
+	<Button 
+		android:text="接続テスト" 
+		android:id="@+id/connect_test_button" 
+		android:layout_height="wrap_content" android:layout_width="wrap_content"  android:onClick="toConnectTest"/>
+
+</LinearLayout>

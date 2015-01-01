@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainMenu!</string>
+    <string name="app_name">BuyerDemo</string>
+    <string name="next">次へ</string>
+    <string name="supplier_search">仕入先検索</string>
+    <string name="material_list">品目一覧</string>
+    <string name="barcode_read">バーコード読取</string>
+    <string name="back_menu">メニューに戻る</string>
+    <string name="to_order_req">発注依頼</string>
+    <string name="to_notice_list">通知履歴</string>
+    <string name="to_order_list">発注履歴</string>
+    <string name="to_schedule">スケジュール</string>
+    <string name="to_route_navi">乗換案内</string>
+    <string name="to_master_sync">マスタ更新</string>
+    <string name="to_logout">ログアウト</string>
+    <string name="prev">前へ</string>
+    <string name="suppliername">名前</string>
+    <string name="suppliyeaddress">住所</string>
+    <string name="tellnumber">電話番号</string>
+    <string name="email">メールアドレス</string>
+    <string name="decide">決定</string>
+    <string name="back">戻る</string>
+    <string name="stock_list">在庫一覧</string>
+    <string name="request_create">依頼作成</string>
+    <string name="suryo">数量</string>
+    <string name="optionsmenu_to_contextmenu">コンテキストメニュー</string>
+    <string name="confirm">確認</string>
+    <string name="stop">中止</string>
+    <string name="sync">同期</string>
+    <string name="menu_item_to_menu">メニュー</string>
+    <string name="menu_item_to_logout">ログアウト</string>
+    <string name="menu_item_to_login">ログイン</string>
+    <string name="menu_item_to_config">設定</string>
+
+    <!-- Push Config Start -->
+    <string name="textView_descRecvRegist">プッシュ通知の受信設定を行います。\n社員番号を入力し、[設定]ボタンを押下してください。</string>
+    <string name="textView_descSendRegist">プッシュ通知の送信設定を行います。\n管理者の社員番号を入力し、[設定]ボタンを押下してください。</string>
+    <string name="textView_descRecvSuccess">プッシュ通知の受信設定が成功しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descRecvFailed">プッシュ通知の受信設定が失敗しました。もう一度やり直してください。</string>
+    <string name="textView_descSendSuccess">プッシュ通知の送信設定が成功しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descSendFailed">プッシュ通知の送信設定が失敗しました。もう一度やり直してください。</string>
+    <string name="textView_descRecvRefer">以下の内容でプッシュ通知の受信設定が行われています。\n設定を解除する場合は、[解除]ボタンを押下してください。</string>
+    <string name="textView_descSendRefer">以下の内容でプッシュ通知の送信設定が行われています。\n設定を解除する場合は、[解除]ボタンを押下してください。</string>
+    <string name="textView_descRecvUnRegistSuccess">プッシュ通知の受信設定を解除しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descSendUnRegistSuccess">プッシュ通知の送信設定を解除しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descRecvUnRegistFailed">プッシュ通知の受信設定の解除に失敗しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descSendUnRegistFailed">プッシュ通知の送信設定の解除に失敗しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="button_complete">完了</string>
+    <string name="button_retry">設定をやり直す</string>
+    <string name="textView_desc01">プッシュのサンプルアプリケーションです。\nメニューボタンを押下し、プッシュ通知の設定を行ってください\n設定完了後、テキストボックスにメッセージを入力し、プッシュ通知ボタンを押してください。</string>
+    <string name="button_config">設定</string>
+    <!-- Push Config End -->
+</resources>

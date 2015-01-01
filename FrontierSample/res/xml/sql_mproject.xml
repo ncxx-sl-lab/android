@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- プロジェクトマスタテーブル -->
+<mapper namespace="MProject">
+
+    <!-- エンティティ取得 -->
+    <select id="getEntity">
+        SELECT
+            PROJECT_CD AS projectCd
+            ,BRANCH_NO AS branchNo
+            ,PROJECT_NAME AS projectName
+            ,VALID_PERIOD_START AS validPeriodStart
+            ,VALID_PERIOD_END AS validPeriodEnd
+        FROM
+            M_PROJECT
+        <dynamic prepend="WHERE">
+            <isNotNull prepend="AND" property="projectCd">
+                PROJECT_CD = #projectCd#
+            </isNotNull>
+            <isNotNull prepend="AND" property="branchNo">
+                BRANCH_NO = #branchNo#
+            </isNotNull>
+        </dynamic>
+        ORDER BY PROJECT_CD,BRANCH_NO
+    </select>
+
+    <!-- エンティティ数取得 -->
+
+
+
+
+    <!-- エンティティ登録 -->
+	<insert id="insert">
+	    <!-- プライマリキー代入先を指定 -->
+		<selectKey keyProperty="projectCd" />
+<!--
+		<selectKey keyProperty="branchNo" />
+		<selectKey keyProperty="projectCd,branchNo" />
+-->
+
+		<!-- 追加SQL -->
+		INSERT INTO M_PROJECT (
+<!--
+ -->
+			PROJECT_CD
+			,BRANCH_NO
+			,PROJECT_NAME
+			,VALID_PERIOD_START
+			,VALID_PERIOD_END
+		) VALUES (
+<!--
+-->
+			#projectCd#
+			,#branchNo#
+			,#projectName#
+			,#validPeriodStart#
+			,#validPeriodEnd#
+		)
+	</insert>
+
+    <!-- エンティティ更新 -->
+    <update id="update">
+		UPDATE M_PROJECT
+		SET
+			PROJECT_NAME = #projectName#
+			,VALID_PERIOD_START = #validPeriodStart#
+			,VALID_PERIOD_END = #validPeriodEnd#
+	    WHERE 1 = 1
+	    AND PROJECT_CD = #projectCd#
+	    AND BRANCH_NO = #branchNo#
+    </update>
+
+    <!-- エンティティ削除 -->
+	<delete id="delete">
+	    DELETE FROM M_PROJECT
+	    WHERE 1 = 1
+	    AND PROJECT_CD = #projectCd#
+	    AND BRANCH_NO = #branchNo#
+	</delete>
+</mapper>

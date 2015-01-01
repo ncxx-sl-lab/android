@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 
+	android標準テーマの１つであるTheme.Lightを拡張してTheme定義を行う。
+	Themeをアプリケーションのテーマとして使用する定義はAndroidManifest.xmlのapplicationタグで記載する。
+	-->
+  <style name="CustomTheme.Light" parent="@android:style/Theme.Light">
+    <!-- Window title attributes -->
+  	<item name="android:windowTitleBackgroundStyle">@style/CustomWindowBackground</item>
+    <item name="android:windowTitleStyle">@style/CustomWindowTitle</item>
+  </style>
+
+  <style name="CustomWindowBackground">
+    <item name="android:background">@drawable/title_bar</item>
+  </style>
+  
+  <style name="CustomWindowTitle">
+  	<item name="android:singleLine">true</item>
+  	<item name="android:textAppearance">@style/TextAppearance.WindowTitle</item>
+  </style>
+  
+  <style name="TextAppearance.WindowTitle" parent="@android:style/TextAppearance.WindowTitle">
+  	<item name="android:textColor">#ffffff</item>
+  	<item name="android:textStyle">normal</item>
+  </style>
+	
+<!--     
+ 	
+	<style name="ListTitleStyle">
+        <item name="android:textColor">#0000CC</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ListDetailStyle">
+        <item name="android:textColor">#202020</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+	<style name="DetailTitleStyle">
+        <item name="android:textColor">#0000CC</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+	<style name="DetailContentsStyle">
+		<item name="android:paddingLeft">3dp</item>
+		<item name="android:paddingRight">3dp</item>
+    </style>
+
+	<style name="FindingTitleStyle">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#cccccc</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+ -->
+
+	<style name="DetailViewStyle">
+		<item name="android:layout_margin">3dip</item>
+		<item name="android:padding">10dip</item>
+		<item name="android:background">@drawable/detail_border</item>
+    </style>
+        	
+</resources>

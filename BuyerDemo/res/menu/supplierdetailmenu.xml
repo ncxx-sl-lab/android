@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="前へ" android:orderInCategory="1" android:id="@+id/menuItem_prev" android:icon="@*android:drawable/ic_menu_back"></item>
+    <item android:orderInCategory="2" android:id="@+id/menuItem_next" android:icon="@*android:drawable/ic_menu_forward" android:title="次"></item>
+    <item android:title="売上実績" android:orderInCategory="3" android:id="@+id/item5" android:icon="@android:drawable/ic_menu_gallery"></item>
+    <item android:title="メール" android:orderInCategory="4" android:id="@+id/menuItem_mail" android:icon="@android:drawable/ic_menu_send"></item>
+</menu>

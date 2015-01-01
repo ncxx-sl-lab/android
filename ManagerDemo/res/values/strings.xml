@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HellomapActivity!</string>
+
+    <string name="app_name">ManagerDemo</string>
+    <string name="button_map">地図</string>
+    <string name="button_buyer">バイヤー照会</string>
+    <string name="button_notice">通知作成</string>
+    <string name="button_notice_hist">通知履歴</string>
+    <string name="button_request_hist">承認履歴</string>
+    <string name="button_report">レポート</string>
+	<string name="button_logout">ログアウト</string>
+
+	<string name="button_before">←前へ</string>
+	<string name="button_next">次へ→</string>
+	<string name="button_select">通知先選択</string>
+
+	<string name="button_send">送信</string>
+	<string name="button_cancel">戻る</string>
+
+
+    <string name="title_mainmenu">メインメニュー</string>
+    <string name="title_materiallist">品目一覧</string>
+    <string name="title_materialdetail">品目個別</string>
+    <string name="title_noticeconfirm">通知内容確認</string>
+    <string name="title_noticeentry">通知入力</string>
+    <string name="title_noticelist">通知一覧</string>
+    <string name="title_noticedetail">通知個別</string>
+    <string name="title_requestlist">依頼一覧</string>
+    <string name="title_requestmenulist">依頼一覧</string>
+    <string name="title_requestdetaildisp">依頼個別（照会）</string>
+    <string name="title_requestdetailupdate">依頼個別（変更）</string>
+    <string name="title_buyerlist">バイヤー一覧</string>
+    <string name="title_buyerdetail">バイヤー個別</string>
+    <string name="title_buyerachievement">バイヤー別購買実績</string>
+    <string name="title_reportlist">レポート一覧</string>
+    <string name="title_stocklist">在庫一覧</string>
+    <string name="title_salesachievementlist">販売実績一覧</string>
+    <string name="button_SalesAchievementList">販売実績</string>
+    <string name="button_StockList">在庫一覧</string>
+    <string name="button_Login">ログイン</string>
+
+    <string name="menu_item_to_menu">メニュー</string>
+    <string name="menu_item_to_logout">ログアウト</string>
+    <string name="menu_item_to_login">ログイン</string>
+    <string name="menu_item_to_config">設定</string>
+
+	<!-- Push Config Start -->
+    <string name="textView_descRecvRegist">プッシュ通知の受信設定を行います。\n社員番号を入力し、[設定]ボタンを押下してください。</string>
+    <string name="textView_descSendRegist">プッシュ通知の送信設定を行います。\n管理者の社員番号を入力し、[設定]ボタンを押下してください。</string>
+    <string name="textView_descRecvSuccess">プッシュ通知の受信設定が成功しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descRecvFailed">プッシュ通知の受信設定が失敗しました。もう一度やり直してください。</string>
+    <string name="textView_descSendSuccess">プッシュ通知の送信設定が成功しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descSendFailed">プッシュ通知の送信設定が失敗しました。もう一度やり直してください。</string>
+    <string name="textView_descRecvRefer">以下の内容でプッシュ通知の受信設定が行われています。\n設定を解除する場合は、[解除]ボタンを押下してください。</string>
+    <string name="textView_descSendRefer">以下の内容でプッシュ通知の送信設定が行われています。\n設定を解除する場合は、[解除]ボタンを押下してください。</string>
+    <string name="textView_descRecvUnRegistSuccess">プッシュ通知の受信設定を解除しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descSendUnRegistSuccess">プッシュ通知の送信設定を解除しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descRecvUnRegistFailed">プッシュ通知の受信設定の解除に失敗しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="textView_descSendUnRegistFailed">プッシュ通知の送信設定の解除に失敗しました。[完了]ボタンを押下して終了してください。</string>
+    <string name="button_complete">完了</string>
+    <string name="button_retry">設定をやり直す</string>
+    <string name="textView_desc01">プッシュのサンプルアプリケーションです。\nメニューボタンを押下し、プッシュ通知の設定を行ってください\n設定完了後、テキストボックスにメッセージを入力し、プッシュ通知ボタンを押してください。</string>
+    <string name="button_config">設定</string>
+
+    <!-- Push Config End -->
+
+</resources>

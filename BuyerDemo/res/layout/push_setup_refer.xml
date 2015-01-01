@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:orientation="vertical" android:layout_width="match_parent">
+
+    <TextView android:text="@string/textView_descRecvRefer" android:id="@+id/textView_desc" android:layout_width="match_parent" android:layout_height="90dip"></TextView>
+
+	<TextView android:text="社員番号" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/textView_label1" android:textSize="19dip"></TextView>
+	<TextView android:text="" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/textView_empNo"></TextView>
+
+	<TextView android:text="" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+	<TextView android:text="registration ID" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/textView_label_registId" android:textSize="19dip"></TextView>
+	<TextView android:text="" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/textView_registId"></TextView>
+
+	<TextView android:text="" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+    <Button android:text="解除" android:id="@+id/button_unregist" android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

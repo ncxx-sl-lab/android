@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+>
+
+	<ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:fadingEdgeLength="100dp"
+    	android:layout_weight="1"
+	>
+
+
+    	<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	>
+
+    	<TableLayout
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">
+
+			<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+	        	<TextView
+	                android:id="@+id/companyNameLabel"
+	                android:text="依頼内容"
+	                android:textSize="19dip"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" />
+
+	    	</TableRow>
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="2011/07/05 13:05"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+
+	    	</TableRow>
+
+    		<TableRow
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+				<ImageView
+					android:src="@drawable/icon"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_width="match_parent" android:id="@+id/requestconfirm_MaterialImage">
+				</ImageView>
+    		</TableRow>
+
+			<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+	        	<TextView
+	                android:id="@+id/companyNameLabel"
+	                android:text=" "
+	                android:textSize="19dip"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" />
+
+	    	</TableRow>
+
+			<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+				<TextView
+	            	android:id="@+id/organizationNameLabel"
+	                android:text="申請先"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	            <LinearLayout>
+
+
+	            <TextView
+	                android:text="管理者ＸＸ"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/requestconfirm_TextView2"/>
+
+        		</LinearLayout>
+
+	    	</TableRow>
+
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="品目"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	            <TextView
+	                android:text="通知品目１"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" android:id="@+id/requestconfirm_TextView5"/>
+
+	    	</TableRow>
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="単価"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	            <TextView
+	                android:text="7,400円"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" android:id="@+id/requestconfirm_TextView4"/>
+
+	    	</TableRow>
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="購入店舗"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	            <TextView
+	                android:text="テスト商店"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" android:id="@+id/requestconfirm_TextView3"/>
+
+	    	</TableRow>
+
+
+
+
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="数量"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	            <TextView
+	                android:id="@+id/positionNameLabel"
+	                android:text="2"
+	                android:textSize="10dip"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="(在庫数：4）"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+
+	    	</TableRow>
+
+
+
+
+
+
+    		<TableRow
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	            <TextView
+	                android:id="@+id/positionNameLabel"
+	                android:text=" "
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	    	</TableRow>
+
+
+
+       	</TableLayout>
+	            <TextView
+	        		android:text="通知コメント"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" android:id="@+id/requestconfirm_TextView1"/>
+
+		        <TextView
+        	        android:id="@+id/personNameText"
+        	        android:textSize="10dip"
+        	        android:layout_marginLeft="10dip"
+            	    android:hint="入力した通知コメントを記載しています。"
+                	android:layout_width="fill_parent"
+                	android:layout_height="wrap_content" />
+        </LinearLayout>
+
+	</ScrollView>
+
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:orientation="horizontal">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/requestconfirm_DecideButton" android:text="@string/decide"></Button>
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/requestconfirm_BackButton" android:text="@string/back"></Button>
+    </LinearLayout>
+
+</LinearLayout>

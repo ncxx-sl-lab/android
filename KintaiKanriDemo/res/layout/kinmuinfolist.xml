@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  	android:gravity="bottom"
+    >
+
+	<!-- 共通ヘッダ -->
+	<include
+		layout="@layout/commonheader"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		/>
+
+	<LinearLayout android:id="@+id/area1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_weight="0">
+		<TextView 
+			android:id="@+id/lblViewYearMonth" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:gravity="center" 
+			android:text="2012年1月" 
+			android:textStyle="bold"
+			android:textSize="24sp"
+			/>					
+	    <ImageView
+		  	android:src="@drawable/line"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		>
+		<LinearLayout  
+			android:id="@+id/dummy_space"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="top"
+			>
+    			<ListView
+					android:id="@+id/lstKinmuInfo"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					/>
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:id="@+id/area2"
+		android:background="@color/basic_silver"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+		
+		<ImageView android:src="@drawable/background_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content" 
+		    android:layout_width="fill_parent" 
+		    android:id="@+id/tableLayout1" 
+		    android:layout_alignParentBottom="true"
+		    >
+		    <TableRow 
+		    	android:id="@+id/tableRow1" 
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center_vertical" 
+		        >
+				<Button
+			 		android:id="@+id/btnBefore"   
+			  		android:layout_width="fill_parent"   
+			  		android:layout_height="wrap_content"   
+			  		android:drawableTop="@android:drawable/ic_media_rew"   
+			  		android:layout_weight="1"
+					android:gravity="center"
+					android:text="前月"
+			  		/>
+				<Button
+			 		android:id="@+id/btnToday"   
+			  		android:layout_width="fill_parent"   
+			  		android:layout_height="wrap_content"   
+			  		android:drawableTop="@android:drawable/ic_menu_today"   
+			  		android:layout_weight="1"
+			  		android:text="当月"
+			  		/>  
+				<Button
+			 		android:id="@+id/btnNext"   
+			  		android:layout_width="fill_parent"   
+			  		android:layout_height="wrap_content"   
+			  		android:drawableTop="@android:drawable/ic_media_ff"   
+			  		android:layout_weight="1"
+			  		android:text="翌月"
+			  		/>
+		 	</TableRow>
+		</TableLayout>
+	</LinearLayout>
+
+<!--
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello"
+    />
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="勤務情報一覧画面です"
+    />
+
+<ListView
+    android:id="@+id/kinmuinfocontentlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</ListView>
+-->
+</LinearLayout>

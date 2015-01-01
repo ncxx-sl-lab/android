@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+	<!-- 共通ヘッダ -->
+	<!-- 
+	<include
+		layout="@layout/commonheader"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		/>
+	 -->
+    <!-- Settin Header -->
+<!-- 
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_height="wrap_content"
+    	android:layout_width="match_parent"
+    	android:id="@+id/tableLayout1"
+    	android:stretchColumns="*"
+    	android:background="#aaaaaa"
+    	>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:stretchColumns="*"
+        	>
+-->
+        	<!--
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical"
+        	android:padding="1dp"-->
+<!--            <Button android:text="システム" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:onClick="toSettingSystem"></Button>-->
+<!--
+            <Button android:text="システム" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content"  android:onClick="toSettingSystem"></Button>
+
+            <Button android:text="マスタ　" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_weight="3"  android:layout_height="wrap_content"  android:onClick="toSettingMaster"></Button>
+            <Button android:text="個人" android:id="@+id/button3" android:layout_width="wrap_content" android:layout_weight="2"  android:layout_height="wrap_content" ></Button>
+        </TableRow>
+
+    </TableLayout>
+ -->
+     
+    <ScrollView android:id="@+id/hoge"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 個人設定メニュー -->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:id="@+id/tableLayout1"
+    	android:stretchColumns="1"
+    	android:background="#cccccc"
+    	>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical"
+        	android:padding="1dp"
+        	>
+            <TextView android:text="部署番号" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPersonName" android:text="315330">
+				<requestFocus></requestFocus>
+			</EditText>
+
+        </TableRow>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical"
+        	android:padding="1dp"
+        	>
+            <TextView android:text="社員番号" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number"  android:text="00111">
+				<requestFocus></requestFocus>
+			</EditText>
+
+        </TableRow>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical"
+        	android:padding="1dp"
+        	>
+            <TextView android:text="社員名" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPersonName"   android:text="エスジェイ　太郎">
+				<requestFocus></requestFocus>
+			</EditText>
+
+        </TableRow>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical"
+        	android:padding="1dp"
+        	>
+            <TextView android:text="ランク" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPersonName"  android:text="A">
+				<requestFocus></requestFocus>
+			</EditText>
+
+        </TableRow>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical"
+        	android:padding="1dp"
+        	>
+            <TextView android:text="シフトデータ" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPersonName"  android:text="1(9:00-17:45)">
+				<requestFocus></requestFocus>
+			</EditText>
+
+        </TableRow>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical"
+        	android:padding="1dp"
+        	>
+            <TextView android:text="プロジェクトコード\n（初期値）" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            <Spinner android:id="@+id/spinner2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+
+        </TableRow>
+
+        <TableRow
+        	android:id="@+id/tableRow1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:gravity="center_vertical"
+        	android:padding="1dp"
+        	>
+            <TextView android:text="作業コード（初期値）" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPersonName"  android:text="K">
+				<requestFocus></requestFocus>
+			</EditText>
+            <!--  Spinner android:id="@+id/spinner1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner-->
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+</ScrollView>
+
+
+</LinearLayout>

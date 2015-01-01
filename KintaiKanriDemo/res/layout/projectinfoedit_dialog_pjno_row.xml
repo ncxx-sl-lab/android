@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:id="@+id/projectinfoedit_dialog_pjno" 
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/basic_white"
+	>
+	<LinearLayout 
+		android:id="@+id/projectinfoedit_dialog_pjno_row" 
+		android:orientation="vertical"
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:layout_marginTop="25px"
+		android:layout_marginBottom="25px"
+		android:paddingLeft="5px"
+		>
+		<TextView 
+			android:id="@+id/projectinfoedit_dialog_pjno_row_pjno" 
+			android:text="プロジェクト番号" 
+			android:layout_height="wrap_content" 
+			android:layout_width="match_parent"
+			android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			/>
+		<TextView 
+			android:id="@+id/projectinfoedit_dialog_pjno_row_pjname" 
+			android:text="プロジェクト名" 
+			android:layout_height="wrap_content" 
+			android:layout_width="match_parent"
+			android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			/>
+	</LinearLayout>
+</LinearLayout>

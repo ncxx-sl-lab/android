@@ -1,0 +1,28 @@
+<html>
+<body>
+<script type="text/javascript">
+function postXml(){
+	var req = new XMLHttpRequest();
+	if (req) {
+		req.onreadystatechange = function(){
+			if (req.readyState == 4 && req.status == 200) {
+				alert(req.responseText);
+			}};
+		var url = "kintai?format=xml";
+		//req.setRequestHeader("content-type","text/xml");
+		req.open('POST', url);
+		req.send('<?xml version="1.0" encoding="UTF-8" ?>\n'+
+		  '<KINTAI_LIST>\n'+
+		  '    <KINTAI>\n' +
+		  '        <EMP_NO>00000</EMP_NO>\n'+
+		  '        <K_DATE>20121101</K_DATE>\n'+
+		  '        <EMP_NAME>test</EMP_NAME>\n'+
+		  '    </KINTAI>\n' +
+		  '</KINTAI_LIST>');
+	}
+}
+</script>
+<input type=button value=submit onclick="postXml();" />
+</body>
+</html>
+

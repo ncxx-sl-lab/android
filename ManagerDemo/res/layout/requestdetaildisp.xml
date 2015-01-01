@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+>
+
+	<TextView
+    	android:text="承認依頼内容" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:textSize="19dip"
+	/>
+	
+	<ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:fadingEdgeLength="100dp"
+    	android:layout_weight="1"
+	>
+
+    	
+    	<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	>
+    	
+    	<TableLayout 
+    		android:orientation="vertical" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="fill_parent">
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	        
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="2011/07/05 13:05"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+
+	    	</TableRow>
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	        
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="　"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+
+	    	</TableRow>
+    		
+    		<TableRow
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+        		
+				<ImageView 
+					android:id="@+id/materialDetail_MaterialImage" 
+					android:src="@drawable/icon" 
+					android:layout_height="wrap_content" 
+					android:layout_weight="1" 
+					android:layout_width="match_parent"
+					>
+				</ImageView>
+    		</TableRow>
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	        
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="　"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+
+	    	</TableRow>
+	    				
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	        
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="品目"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+	            <TextView
+	                android:id="@+id/positionNameLabel"
+	                android:text="未承認品目１"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+
+	    	</TableRow>
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	        
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="単価"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+	            <TextView
+	                android:id="@+id/positionNameLabel"
+	                android:text="7,400円"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+
+	    	</TableRow>
+
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	        
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="購入店舗"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+	            <TextView
+	                android:id="@+id/positionNameLabel"
+	                android:text="テスト商店"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+
+	    	</TableRow>
+
+			<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+            
+				<TextView
+	            	android:id="@+id/organizationNameLabel"
+	                android:text="依頼元"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+	            <TextView
+	                android:id="@+id/positionNameLabel"
+	                android:text="ＳＪＩ太郎"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+	   		
+	    	</TableRow>
+	    		    		    		    		    	
+	    	<TableRow
+       	 		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	        
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="数量"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+	            <TextView
+	                android:id="@+id/positionNameLabel"
+	                android:text="1000"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+
+	    	</TableRow>
+
+
+
+
+	    		    	
+
+    		<TableRow
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+	            <TextView
+	                android:id="@+id/positionNameLabel"
+	                android:text=" "
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />        		
+	    	</TableRow>
+
+
+	    	
+       	</TableLayout>
+	            <TextView
+	        		android:id="@+id/organizationNameLabel"
+	                android:text="依頼コメント"
+	                android:layout_marginLeft="10dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                />
+
+		        <TextView
+        	        android:id="@+id/personNameText"
+        	        android:textSize="10dip"
+        	        android:layout_marginLeft="10dip"
+            	    android:hint="送信された通知コメントを記載しています。"
+                	android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	/>
+        </LinearLayout>
+        
+	</ScrollView>
+
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="horizontal">
+    	<Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:text="過去照会" android:id="@+id/HistoryButton"></Button>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:orientation="horizontal">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="承認" android:id="@+id/OkButton"></Button>
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="却下" android:id="@+id/NgButton"></Button>
+        <!--<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="戻る" android:id="@+id/BackButton"></Button>-->
+    </LinearLayout>
+
+</LinearLayout>

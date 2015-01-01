@@ -1,0 +1,1118 @@
+body {
+	background-color: #c7ccb7;
+	color: #000000;
+	font-family: "Comic Sans MS","ＭＳ Ｐゴシック",sans-serif;
+	font-size: 12pt;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+form{
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+/* ページテーブル（layout.jspで使用） */
+table.frame {
+	border-collapse: collapse;
+	border: none;
+	margin: -3px 0px 0px 0px;
+	padding: 0;
+	width:100%
+}
+table.frame tr{
+	border: inherit;
+}
+table.frame td{
+	border: inherit;
+}
+
+/* ダイアログ領域（layout.jspに記載） */
+div#dialog {
+	font-size: 14px;
+}
+
+/* メニュー */
+div.menu_title {
+	border:none;
+	background-color: #576614;
+	text-align:left;
+	margin: 0px 15px;
+	padding: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+}
+
+table.menu_title {
+	border-collapse: collapse;
+	background-color: #576614;
+	border:none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+}
+
+table.menu_title tr {
+	border-collapse: inherit;
+	background-color: inherit;
+	border: inherit;
+	margin: 0;
+	padding: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+}
+
+table.menu_title td {
+	border-collapse: inherit;
+	background-color: inherit;
+	border: inherit;
+	margin: 0;
+	padding: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+}
+
+table.menu_title td.title{
+	width: 250px;
+	text-align:center;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: #ffffff;
+	padding: 2px 4px;
+	color: #576614;
+}
+
+table.menu_title td.user{
+	text-align:right;
+	font-size: 8pt;
+	font-weight: none;
+	padding: 2px 4px;
+	color: #ffffff;
+}
+
+div.menu {
+	min-width: 800px;
+	border:none;
+	text-align:center;
+	margin: 15px;
+}
+
+table.menu {
+	margin-left:auto;
+	margin-right:auto;
+	border:none;
+	border-collapse: collapse;
+	padding: 0;
+	width: 1100px;
+}
+
+table.menu tr {
+	border: inherit;
+	border-collapse: inherit;
+	padding: 0;
+}
+
+table.menu td {
+	border: inherit;
+	border-collapse: inherit;
+	color: #576614;
+	text-align:center;
+	font-size: 9pt;
+	font-weight: bold;
+	padding: 2px;
+}
+
+a.menu_item{
+	white-space: nowrap;
+	color: #576614;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+a.menu_item:hover {
+	color:#ffffff;
+	background-color: #999999;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+.menu_active {
+	color:#ffffff;
+	background-color: #ce5242;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+/* 検索領域（全画面共通） */
+div#ser_area{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 検索領域 入力領域（全画面共通） */
+div#ser_input_area{
+	border: none;
+	background-color: #ffffff;
+	text-align:left;
+	margin:0px 15px 0px 15px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/* 検索領域 リスト領域（全画面共通） */
+div#ser_list_area{
+	border: none;
+	text-align:left;
+	margin:0px 15px 15px 15px;
+	padding: 15px 15px;
+}
+
+/* 登録領域（全画面共通） */
+div#ent_area{
+	border:none;
+	background-color: #ffffff;
+	text-align:left;
+	margin:0px 15px 15px 15px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/* 入力テーブル（全画面共通） */
+table.input_tbl {
+	font-size: 10pt;
+	background-color:#ffffff;
+	border:none;
+}
+table.input_tbl tr{
+	border: inherit;
+}
+table.input_tbl td{
+	border: inherit;
+}
+table.input_tbl td.td_header {
+	border:1px solid #576614;
+	background-color:#e0ebaf;
+	color:#5f6527;
+	font-weight:bold;
+	padding: 3px 5px;
+}
+table.input_tbl td.td_header_otl {
+	background-color:#576614;
+	color:#ffffff;
+	font-weight:bold;
+	padding: 3px 5px;
+}
+table.input_tbl td.td_header_repo {
+	background-color:#ce5242;
+	color:#ffffff;
+	font-weight:bold;
+	padding: 3px 5px;
+}
+
+table.input_tbl td.td_btn {
+	font-size: 9pt;
+	padding: 3px 0px;
+}
+
+/* 入力項目（全画面共通） */
+/* テキスト */
+input.input_com {
+	font-size: 9pt;
+	height: 20px;
+	border:1px solid #576614;
+}
+input.ime_active {
+	ime-mode:active;
+}
+input.ime_disabled {
+	ime-mode:disabled;
+}
+/* コンボボックス */
+select.select {
+	font-size: 9pt;
+	height: 20px;
+}
+select.input_com {
+	font-size: 9pt;
+	height: 20px;
+	border:1px solid #576614;
+}
+
+/* エラー時入力項目（全画面共通） */
+.input_err_msg {
+	color: #8b0000;
+}
+
+/**
+ * 一覧表示テーブル（全画面共通）
+ *
+ */
+div#ichiran_cnt {
+	color: #576614;
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* 以下、未精査 */
+td.td_msg {
+	font-size: 12pt;
+	color:#191970;
+	font-weight:bold;
+	background-color:#ffffff;
+}
+
+
+td.td_header_repo {
+	background-color:#990033;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+td.td_header_otl {
+	background-color:#339933;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+td.td_header_key {
+	background-color:#3366cc;
+	color:#ff00ff;
+	font-weight:bold;
+}
+
+td.td_input {
+	background-color:#99ccff;
+	text-align:left;
+}
+
+input.input_inactive {
+	ime-mode:inactive;
+	height: 20px;
+	border:1px solid #576614;
+}
+
+
+input.input_date{
+	height: 20px;
+	width: 72px;
+	ime-mode:disabled;
+	text-align:center;
+	border:1px solid #576614;
+	margin:0px;
+}
+
+input.input_date_detail{
+	height: 20px;
+	width: 70px;
+	font-size:9pt;
+	ime-mode:disabled;
+	text-align:center;
+	border:1px solid #576614;
+	margin:0px;
+}
+
+input.input_readonly{
+	height: 20px;
+	border:1px solid #576614;
+	background-color: #CCCCCC;
+	margin-right:0;
+}
+
+input.textarea{
+	height: 40px;
+	font-size: 10pt;
+	border:1px solid #576614;
+}
+
+hr{
+	color:#3366cc;
+	width:100%;
+	text-align:center;
+}
+
+/**
+ * ボタン用（全画面共通）
+ *
+ */
+input.btn_com {
+	background-image: url('../images/button_blue.gif');
+	text-align:center;
+	font-size:8pt;
+	font-weight:bold;
+	color:#ffffff;
+	position:relative;
+	width:75px;
+	margin:0px,2px;
+	padding-top:10px;
+	height:25px;
+	background-color:#e0ffff;
+	border:0;
+}
+
+input.btn_com_ent {
+	background-image: url('../images/button_pink.gif');
+	text-align:center;
+	font-size:8pt;
+	font-weight:bold;
+	color:#ffffff;
+	position:relative;
+	width:75px;
+	margin:0px,2px;
+	padding-top:10px;
+	height:25px;
+	background-color:#e0ffff;
+	border:0;
+}
+
+input.btn_com_sel {
+	background-image: url('../images/button_green.gif');
+	text-align:center;
+	font-size:8pt;
+	font-weight:bold;
+	color:#ffffff;
+	position:relative;
+	width:70px;
+	margin:0px,2px;
+	padding-top:7px;
+	height:20px;
+	background-color:#e0ffff;
+	border:0;
+}
+
+input.btn_com_wide {
+	background-image: url('../images/button_wide.gif');
+	text-align:center;
+	font-size:8pt;
+	font-weight:bold;
+	color:#ffffff;
+	position:relative;
+	width:200px;
+	margin:0px,2px;
+	padding-top:10px;
+	height:25px;
+	background-color:#e0ffff;
+	border:0;
+}
+
+
+/**
+ * カレンダーボタン用（全画面共通）
+ *
+ */
+.btn_date{
+	background-color:#0000a6;
+	height:19px;
+	width:15px;
+	font-size:7pt;
+	position:relative;
+	border-color:#7e9bed;
+	color:#ffffff;
+	left:-5px;
+	margin-right:-2pt;
+}
+
+.btn_date_prosche{
+	background-color:#0000a6;
+	height:19px;
+	width:15px;
+	font-size:7pt;
+	border-color:#7e9bed;
+	color:#ffffff;
+	padding:0px 0px 0px -2px;
+	margin:0px 0px 0px -2px;
+}
+
+/**
+ * ボタンテーブル用（全画面共通）
+ *
+ */
+table.btn {
+	margin-left:0;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:0;
+}
+
+table.btn th {
+	margin: 0;
+	padding:0;
+}
+
+table.btn td {
+	margin: 0;
+	padding:0;
+}
+
+td.ichiran_odd_center {
+	text-align:center;
+	background-color:#FFFFE0;
+    word-break:break-all;
+}
+
+td.ichiran_odd_left {
+	text-align:left;
+	background-color:#FFFFE0;
+    word-break:break-all;
+}
+
+td.ichiran_even_center {
+	text-align:center;
+	background-color:#CCFFCC;
+    word-break:break-all;
+}
+
+td.ichiran_even_left {
+	text-align:left;
+	background-color:#CCFFCC;
+    word-break:break-all;
+}
+
+td.ichiran_warning_center {
+	text-align:center;
+	background-color:#FF99CC;
+    word-break:break-all;
+}
+
+td.ichiran_warning_left {
+	text-align:left;
+	background-color:#FF99CC;
+    word-break:break-all;
+}
+
+td.ichiran_disabled_center {
+	text-align:center;
+	background-color:#A9A9A9;
+    word-break:break-all;
+}
+
+/**
+ * ダウンロードポップアップ画面用
+ *
+ */
+td.pop_header {
+	font-size:12pt;
+	color:#0000ff;
+	font-style:italic;
+}
+
+/**
+ * 予実績登録用
+ */
+table.entry {
+	border-collapse: collapse;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0;
+	padding:0;
+}
+
+table.entry th {
+	background-color: #f0f0f0;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0;
+	padding:0;
+	white-space: nowrap;
+}
+
+table.entry td {
+	border-color: #a9a9a9;
+	border-width: 1px;
+	margin: 0;
+	font-size: 7pt;
+	text-align:center;
+	white-space: nowrap;
+}
+
+td.entry_head {
+	border-style: dashed;
+	height:20px;
+}
+
+td.entry_head_h {
+	border-style: dashed;
+	height:20px;
+	background-color: #ccccff;
+}
+
+td.entry_input {
+	border-style: dashed;
+	height:26px;
+}
+
+td.entry_input_h {
+	border-style: dashed;
+	height:26px;
+	background-color: #ccccff;
+}
+
+td.entry_line {
+	border-style: dashed;
+	background-color: #a9a9a9;
+	height:3px;
+}
+
+td.entryh {
+	background-color: #ccccff;
+}
+
+td.proschesel {
+	font-size: 10pt;
+}
+
+select.entrysyain {
+	width:100%;
+}
+
+select.entrypj {
+	width:100%;
+	font-size: 7pt;
+	height:20px;
+	margin: 0;
+}
+
+select.entrysg {
+	width:100%;
+	font-size: 7pt;
+	height:20px;
+	margin: 0;
+}
+
+select.entryss {
+	width:100%;
+	font-size: 7pt;
+	height:20px;
+	margin: 0;
+}
+
+input.entryyobi {
+	width:100%;
+	font-size: 7pt;
+	height:20px;
+	margin: 0;
+}
+
+checkbox.entrychk {
+	font-size: 5pt;
+	margin: 0;
+}
+
+input.entrypjr {
+	width:100%;
+	height:20px;
+	border:none;
+	background-color:transparent;
+	font-size: 7pt;
+	text-align:left;
+	margin: 0;
+}
+
+input.entrytime {
+	width:35px;
+	font-size:8pt;
+	text-align:right;
+	ime-mode:disabled;
+	height:20px;
+	margin: 0;
+}
+
+input.entrytimel {
+	width:35px;
+	font-size:8pt;
+	text-align:right;
+	ime-mode:disabled;
+	background-color: #CCCCCC;
+	height:20px;
+	margin: 0;
+}
+
+input.entrytimeh {
+	width:35px;
+	font-size:8pt;
+	text-align:right;
+	ime-mode:disabled;
+	background-color: #ccccff;
+	height:20px;
+	margin: 0;
+}
+
+input.entrytotalc {
+	width:35px;
+	border:none;
+	background-color:transparent;
+	font-size: 7pt;
+	text-align:center;
+	margin: 0;
+}
+
+input.entrytotalr {
+	width:100%;
+	border:none;
+	background-color:transparent;
+	font-size: 7pt;
+	text-align:center;
+	margin: 0;
+}
+
+input.entryyotei {
+	width:100%;
+	font-size:8pt;
+	text-align:right;
+	ime-mode:disabled;
+	background-color: #FF9999;
+	height:20px;
+	margin: 0;
+}
+
+input.entry_r_notime {
+	width:35px;
+	font-size:8pt;
+	text-align:right;
+	border:none;
+	background-color:transparent;
+	height:20px;
+	margin: 0;
+}
+
+input.entry_r_yotei {
+	width:35px;
+	font-size:8pt;
+	text-align:right;
+	border:none;
+	background-color:#FF9999;
+	height:20px;
+	margin: 0;
+}
+
+input.entry_r_jnai {
+	width:35px;
+	font-size:8pt;
+	text-align:right;
+	border:none;
+	background-color:#6699FF;
+	height:20px;
+	margin: 0;
+}
+
+input.entry_r_jgai {
+	width:35px;
+	font-size:8pt;
+	text-align:right;
+	border:none;
+	background-color:#66CCFF;
+	height:20px;
+	margin: 0;
+}
+
+input.entrypop_r {
+	width:100%;
+	height:20px;
+	border:none;
+	background-color:transparent;
+	font-size: 8pt;
+	text-align:left;
+	margin: 0;
+}
+
+input.entrypop_s {
+	width:100%;
+	height:20px;
+	border:none;
+	background-color:transparent;
+	font-size: 7pt;
+	text-align:left;
+	margin: 0;
+}
+
+input.entrypop_i {
+	width:100%;
+	font-size: 8pt;
+	ime-mode:disabled;
+	height:20px;
+	margin: 0;
+}
+
+select.entrypop_s {
+	width:100%;
+	font-size: 7pt;
+	height:20px;
+	margin: 0;
+}
+
+/**
+ * プロジェクトスケジュール登録用
+ */
+table.prosche {
+	border-collapse: collapse;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0;
+	padding:0;
+}
+
+table.prosche th {
+	background-color: #f0f0f0;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0;
+	padding:0;
+	white-space: nowrap;
+}
+
+table.prosche td {
+	border-color: #a9a9a9;
+	border-width: 1px;
+	margin: 0;
+	font-size: 8pt;
+	text-align:center;
+	white-space: nowrap;
+}
+
+td.prosche_head {
+	border-style: dashed;
+	height:20px;
+}
+
+td.prosche_head_h {
+	border-style: dashed;
+	height:20px;
+	background-color: #ccccff;
+}
+
+td.prosche_input {
+	border-style: dashed;
+	height:26px;
+}
+
+td.prosche_input_h {
+	border-style: dashed;
+	height:26px;
+	background-color: #ccccff;
+}
+
+td.prosche_line {
+	border-style: dashed;
+	background-color: #808080;
+	height:3px;
+}
+
+td.prosche_line_d {
+	border-style: dashed;
+	background-color: #a9a9a9;
+	height:2px;
+}
+
+select.proschepj {
+	width:250px;
+	height:20px;
+	margin: 0;
+}
+
+select.proschesel {
+	width:100%;
+	height:20px;
+	margin: 0;
+}
+
+select.proschedetail {
+	width:100%;
+	font-size: 7pt;
+	height:20px;
+	margin: 0;
+}
+
+input.proschesagyo {
+	width:100%;
+	border:none;
+	background-color:transparent;
+	font-size: 8pt;
+	text-align:left;
+	margin: 0;
+}
+
+input.proschesagyo_d {
+	width:100%;
+	border:none;
+	background-color:transparent;
+	font-size: 7pt;
+	text-align:left;
+	margin: 0;
+}
+
+input.prosche_dayweek {
+	width:30px;
+	border:none;
+	background-color:transparent;
+	font-size: 7pt;
+	text-align:center;
+	margin: 0;
+}
+
+input.input_date_prosche{
+	height: 20px;
+	width: 65px;
+	font-size:8pt;
+	ime-mode:disabled;
+	text-align:center;
+	border:1px solid #7e9bed;
+	padding:0px -2px 0px 0px;
+	margin:0px -2px 0px 0px;
+}
+
+input.proschetime {
+	width:100%;
+	font-size:8pt;
+	text-align:right;
+	ime-mode:disabled;
+	height:20px;
+	margin: 0;
+}
+
+input.proschetime_j {
+	width:100%;
+	font-size:8pt;
+	text-align:right;
+	border:none;
+	background-color:transparent;
+	height:20px;
+	margin: 0;
+}
+
+input.prosche_y1 {
+	width:30px;
+	font-size:7pt;
+	text-align:right;
+	vertical-align:middle;
+	border:none;
+	background-color: #FF9999;
+	height:20px;
+	margin: 0;
+	padding-top: 5;
+}
+
+input.prosche_y2 {
+	width:30px;
+	font-size:7pt;
+	text-align:right;
+	vertical-align:middle;
+	border:none;
+	background-color: #FFCCCC;
+	height:20px;
+	margin: 0;
+	padding-top: 5;
+}
+
+input.prosche_j1 {
+	width:30px;
+	font-size:7pt;
+	text-align:right;
+	border:none;
+	background-color: #6699FF;
+	height:20px;
+	margin: 0;
+	padding-top: 5;
+}
+
+input.prosche_j2 {
+	width:30px;
+	font-size:7pt;
+	text-align:right;
+	border:none;
+	background-color: #66CCFF;
+	height:20px;
+	margin: 0;
+	padding-top: 5;
+}
+
+input.prosche_e {
+	width:30px;
+	font-size:7pt;
+	text-align:right;
+	border:none;
+	background-color:transparent;
+	height:20px;
+	margin: 0;
+}
+
+.btn_prosche{
+	background-color:#0000a6;
+	height:19px;
+	width:15px;
+	font-size:7pt;
+	border-color:#7e9bed;
+	color:#ffffff;
+	margin-right:0;
+}
+
+/**
+ * Ｑ＆Ａ登録、プロジェクト登録画面用
+ */
+input.textarea_qa{
+	ime-mode:active;
+	font-size: 10pt;
+	border:1px solid #7e9bed;
+	margin: 0;
+}
+
+/**
+ * プロジェクト登録画面用
+ */
+table.pro_list_f {
+	border:1px solid #7e9bed;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding:0;
+}
+
+table.pro_list_f th {
+	border:1px solid #7e9bed;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding:0;
+}
+
+table.pro_list_f td {
+	border:1px solid #7e9bed;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding:0,2px,0,2px;
+	font-size: 10pt;
+	text-align:left;
+}
+
+table.pro_list {
+	border-width: 0px;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding:0;
+}
+
+table.pro_list th {
+	border-width: 0px;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding:0;
+}
+
+table.pro_list td {
+	border-top-width:0;
+	border-left-width:0;
+	border-right-width:0;
+	border-bottom-width:1px;
+	border-bottom-color:#7e9bed;
+	border-bottom-style:dashed;
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+	margin: 0;
+	padding:0,2px,0,2px;
+	font-size: 10pt;
+	text-align:left;
+}
+
+checkbox.pro_ent_sg {
+	font-size: 7pt;
+	margin: 0;
+}
+
+/** Dummy項目 **/
+input.dummy{
+	display:none
+}
+
+/**
+ * マスタメンテ登録画面用
+ *
+ */
+input.master_input {
+	height: 20px;
+	border:1px solid #7e9bed;
+	width:100%;
+}
+
+input.master_readonly {
+	height: 20px;
+	border:1px solid #7e9bed;
+	background-color: #CCCCCC;
+	width:100%;
+}
+
+td.master_title {
+	font-size:12pt;
+	font-weight:bold;
+	color:#0000ff;
+}
+
+td.master_e_btn {
+	padding:0,10px;
+}
+
+span.jokyo_msg {
+	font-size: 8pt;
+	color:#800000;
+}
+
+.btn_1 {
+	width: 80px;
+	margin: 2px,10px,0px, 0px;
+}
+
+.btn_1 span{
+	width:auto;
+	vertical-align:middle;
+}
+
+.btn_1 span.saerch{
+	color:#0000ff;
+}
+
+.btn_1 span.edit{
+	color:#DC143C;
+}
+
+.btn_1 span.add{
+	color:#DC143C;
+}
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:sec="http://www.springframework.org/schema/security"
+ xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+">
+
+	<!-- 認証設定 -->
+	<sec:http auto-config="true" use-expressions="true">
+		<sec:form-login login-page="/login" />
+		<sec:intercept-url pattern="/login" access="permitAll" />
+		<sec:intercept-url pattern="/**" access="hasAnyRole('ROLE_ADMIN','ROLE_LEADER','ROLE_STAFF')" />
+		<sec:intercept-url pattern="/**" access="isAuthenticated()" />
+	</sec:http>
+
+	<!-- カスタム認証処理 -->
+	<sec:authentication-manager alias="authenticationManager">
+		<sec:authentication-provider user-service-ref="userDetailsService" />
+	</sec:authentication-manager>
+
+	<bean id="userDetailsService" class="jp.sji_inc.service.impl.UserDetailServiceImpl"/>
+
+</beans>

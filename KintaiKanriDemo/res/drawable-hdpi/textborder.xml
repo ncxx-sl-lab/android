@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+ 
+    <!-- 枠線の設定 -->
+    <stroke android:width="1px" android:color="#000000" />  
+          
+    <!-- 描画領域を内側に寄せる（罫線が内側のビューに重ならないようにする） -->
+    <padding android:left="2px" android:top="2px"  
+            android:right="2px" android:bottom="2px"
+            />
+            
+    <!-- 枠線の角設定 -->
+    <!-- <corners android:radius="2px" /> -->
+    
+    <!-- 内側の塗りつぶしを行う -->
+    <solid android:color="#00000000"/>  <!-- 透過 -->
+    
+    <!-- グラデーションの設定を行う -->
+    <!-- 
+    <gradient
+        android:startColor="#FFFFFFFF"
+        android:endColor="#FF80FF80"
+        android:angle="270" 
+        />
+    -->
+    
+</shape>

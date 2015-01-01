@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+	<Button android:text="@string/button_map" 
+	        android:id="@+id/to_Map"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            />
+            
+	<TextView
+		android:text=" "
+		android:id="@+id/textViewSeparator"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	></TextView>
+	            
+    <Button android:text="@string/button_buyer" android:id="@+id/to_Buyer"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            </Button>
+	
+	<TextView
+		android:text=" "
+		android:id="@+id/textViewSeparator"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	></TextView>
+    
+    <Button android:text="@string/button_notice" android:id="@+id/to_Notice"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"></Button>
+
+	<TextView
+		android:text=" "
+		android:id="@+id/textViewSeparator"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	></TextView>
+
+    <Button android:text="@string/button_notice_hist" android:id="@+id/to_NoticeHist"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"></Button>
+   
+	<TextView
+		android:text=" "
+		android:id="@+id/textViewSeparator"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	></TextView>
+
+    <Button android:text="@string/button_request_hist" android:id="@+id/to_RequestHist"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"></Button>
+   
+	<TextView
+		android:text=" "
+		android:id="@+id/textViewSeparator"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	></TextView>
+
+    <Button android:text="@string/button_report" android:id="@+id/to_Report"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"></Button>
+    
+    <!-- 
+    <Button android:id="@+id/to_Logout" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="@string/button_logout"
+        ></Button>
+    <TextView android:text=" " android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+    <Button android:id="@+id/to_NotificationTest" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="通知テスト"></Button>
+    -->
+    
+</LinearLayout>

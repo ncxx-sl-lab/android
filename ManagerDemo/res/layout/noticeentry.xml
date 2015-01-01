@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+>
+
+
+	<TextView
+		android:id="@+id/Infomation"
+		android:text="通知内容を入力してください。"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		/>
+
+	   <ImageView
+	  	android:src="@drawable/line"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	    android:paddingTop="3dp"
+	    android:paddingBottom="3dp"			  	
+		/>
+			
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:fadingEdgeLength="100dp"
+	    android:layout_weight="1"
+	>
+
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	    >
+		      
+		<TextView
+			android:id="@+id/LabelFromBuyerID"
+			android:text="通知先"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/DetailTitleStyle"
+			/>
+		<TextView
+			android:id="@+id/FromBuyerID"
+			android:clickable="true"
+			android:onClick="clickFromBuyerID"
+			android:text=""
+			android:hint="タップして通知先を選択"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/inputview_stateful"
+			/>
+
+        <TextView
+    		android:id="@+id/LabelSelectMaterialID"
+            android:text="品目"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DetailTitleStyle"
+            />
+            
+        <TextView
+            android:id="@+id/SelectMaterialID"
+            android:clickable="true"
+            android:onClick="clickSelectMaterialID"
+            android:text=""
+            android:hint="タップして品目を入力"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputview_stateful"
+            />
+
+        <TextView
+    		android:id="@+id/LabelMaterialCount"
+            android:text="数量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DetailTitleStyle"
+            />
+        <TextView
+            android:id="@+id/SelectMaterialCount"
+            android:clickable="true"
+            android:onClick="clickSelectMaterialCount"
+            android:text=""
+            android:hint="タップして数量を入力"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputview_stateful"
+            />		    
+ 
+	    <ImageView
+		  	android:src="@drawable/line"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+		    android:paddingTop="3dp"
+		    android:paddingBottom="3dp"			  	
+			/>
+ 
+ 
+        <TextView
+   			android:id="@+id/LabelComments"
+	        android:text="通知コメント"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/DetailTitleStyle"
+           />
+
+       <TextView
+  	        android:id="@+id/Comments"
+  	        android:clickable="true"
+  	        android:onClick="clickComments"
+  	        android:hint="タップしてコメントを入力"
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:background="@drawable/inputview_stateful"
+          	/>
+		      
+		</LinearLayout>
+	</ScrollView>	  
+      
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:orientation="horizontal">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="通知" android:id="@+id/SendButton"></Button>
+    </LinearLayout>
+
+</LinearLayout>    
+
+
